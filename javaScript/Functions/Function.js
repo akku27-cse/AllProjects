@@ -1,6 +1,7 @@
-function add(a,b){
-    return a+b;
+function add(){
+const a=9,b=9;
+   console.log(a+b);
 }
-console.log(add(7,5))
 
+setTimeout(add,2300)
 //callback Function
