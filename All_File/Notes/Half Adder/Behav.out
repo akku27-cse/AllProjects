@@ -1,0 +1,61 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1110-g18392a46)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "C:\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
+S_0000024387287a50 .scope module, "test" "test" 2 1;
+ .timescale 0 0;
+v00000243871866d0_0 .var "a", 0 0;
+v0000024387186770_0 .var "b", 0 0;
+v0000024387186810_0 .net "c", 0 0, L_000002438728a890;  1 drivers
+v000002438728a7f0_0 .net "s", 0 0, L_00000243871851c0;  1 drivers
+S_0000024387186400 .scope module, "a1" "halfadder" 2 4, 3 1 0, S_0000024387287a50;
+ .timescale 0 0;
+    .port_info 0 /OUTPUT 1 "s";
+    .port_info 1 /OUTPUT 1 "c";
+    .port_info 2 /INPUT 1 "a";
+    .port_info 3 /INPUT 1 "b";
+L_00000243871851c0 .functor XOR 1, v00000243871866d0_0, v0000024387186770_0, C4<0>, C4<0>;
+L_000002438728a890 .functor AND 1, v00000243871866d0_0, v0000024387186770_0, C4<1>, C4<1>;
+v00000243871533b0_0 .net "a", 0 0, v00000243871866d0_0;  1 drivers
+v0000024387152ee0_0 .net "b", 0 0, v0000024387186770_0;  1 drivers
+v0000024387186590_0 .net "c", 0 0, L_000002438728a890;  alias, 1 drivers
+v0000024387186630_0 .net "s", 0 0, L_00000243871851c0;  alias, 1 drivers
+    .scope S_0000024387287a50;
+T_0 ;
+    %vpi_call 2 6 "$dumpfile", "ha.vcd" {0 0 0};
+    %vpi_call 2 7 "$dumpvars", 32'sb00000000000000000000000000000000, S_0000024387287a50 {0 0 0};
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v00000243871866d0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000024387186770_0, 0, 1;
+    %delay 5, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0000024387186770_0, 0, 1;
+    %delay 5, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v00000243871866d0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000024387186770_0, 0, 1;
+    %delay 5, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0000024387186770_0, 0, 1;
+    %delay 5, 0;
+    %vpi_call 2 12 "$finish" {0 0 0};
+    %end;
+    .thread T_0;
+    .scope S_0000024387287a50;
+T_1 ;
+    %vpi_call 2 15 "$monitor", "Time=%d,a=%b b=%b s=%b c=%b", $time, v00000243871866d0_0, v0000024387186770_0, v000002438728a7f0_0, v0000024387186810_0 {0 0 0};
+    %end;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "structdatatest.v";
+    "Struct.v";

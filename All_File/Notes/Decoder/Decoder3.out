@@ -1,0 +1,191 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1110-g18392a46)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "C:\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
+S_000001fac60d3570 .scope module, "test" "test" 2 1;
+ .timescale 0 0;
+v000001fac61364c0_0 .var "a", 2 0;
+v000001fac6137000_0 .var "en", 0 0;
+v000001fac6135a20_0 .net "y", 7 0, L_000001fac6136880;  1 drivers
+S_000001fac60d7fe0 .scope module, "a1" "decoder3" 2 5, 3 3 0, S_000001fac60d3570;
+ .timescale 0 0;
+    .port_info 0 /OUTPUT 8 "y";
+    .port_info 1 /INPUT 3 "a";
+    .port_info 2 /INPUT 1 "en";
+L_000001fac60c6230 .functor NOT 1, L_000001fac6135ca0, C4<0>, C4<0>, C4<0>;
+L_000001fac60c61c0 .functor AND 1, L_000001fac61358e0, v000001fac6137000_0, C4<1>, C4<1>;
+L_000001fac60c5ba0 .functor AND 1, L_000001fac61370a0, v000001fac6137000_0, C4<1>, C4<1>;
+v000001fac61353e0_0 .net *"_ivl_0", 0 0, L_000001fac60c6230;  1 drivers
+v000001fac6135fc0_0 .net *"_ivl_12", 0 0, L_000001fac61370a0;  1 drivers
+v000001fac61361a0_0 .net *"_ivl_3", 0 0, L_000001fac6135ca0;  1 drivers
+v000001fac6135d40_0 .net *"_ivl_4", 0 0, L_000001fac60c61c0;  1 drivers
+v000001fac6136f60_0 .net *"_ivl_7", 0 0, L_000001fac61358e0;  1 drivers
+v000001fac6136d80_0 .net *"_ivl_8", 0 0, L_000001fac60c5ba0;  1 drivers
+v000001fac6135660_0 .net "a", 2 0, v000001fac61364c0_0;  1 drivers
+v000001fac6135b60_0 .net "en", 0 0, v000001fac6137000_0;  1 drivers
+v000001fac61355c0_0 .net "w", 2 0, L_000001fac6137140;  1 drivers
+v000001fac6136b00_0 .net "y", 7 0, L_000001fac6136880;  alias, 1 drivers
+L_000001fac6135ca0 .part v000001fac61364c0_0, 2, 1;
+L_000001fac61358e0 .part L_000001fac6137140, 0, 1;
+L_000001fac6137140 .concat8 [ 1 1 1 0], L_000001fac60c6230, L_000001fac60c61c0, L_000001fac60c5ba0;
+L_000001fac61370a0 .part v000001fac61364c0_0, 2, 1;
+L_000001fac61357a0 .part v000001fac61364c0_0, 0, 2;
+L_000001fac6135840 .part L_000001fac6137140, 1, 1;
+L_000001fac6136880 .concat8 [ 4 4 0 0], L_000001fac6135e80, L_000001fac6136380;
+L_000001fac6136920 .part v000001fac61364c0_0, 0, 2;
+L_000001fac61394b0 .part L_000001fac6137140, 2, 1;
+S_000001fac60d8170 .scope module, "a1" "decoder2" 3 11, 4 1 0, S_000001fac60d7fe0;
+ .timescale 0 0;
+    .port_info 0 /OUTPUT 4 "y";
+    .port_info 1 /INPUT 2 "a";
+    .port_info 2 /INPUT 1 "en";
+L_000001fac60c5f90 .functor NOT 1, L_000001fac6136a60, C4<0>, C4<0>, C4<0>;
+L_000001fac60c5c80 .functor NOT 1, L_000001fac6136240, C4<0>, C4<0>, C4<0>;
+L_000001fac60c5cf0 .functor AND 1, L_000001fac6135520, L_000001fac6136ba0, L_000001fac6135840, C4<1>;
+L_000001fac60c6000 .functor AND 1, L_000001fac6135700, L_000001fac6136c40, L_000001fac6135840, C4<1>;
+L_000001fac60c6070 .functor AND 1, L_000001fac61371e0, L_000001fac6136600, L_000001fac6135840, C4<1>;
+L_000001fac60c60e0 .functor AND 1, L_000001fac6136100, L_000001fac6137280, L_000001fac6135840, C4<1>;
+v000001fac60ce830_0 .net *"_ivl_0", 0 0, L_000001fac60c5f90;  1 drivers
+v000001fac60cdcf0_0 .net *"_ivl_12", 0 0, L_000001fac6135520;  1 drivers
+v000001fac60ce1f0_0 .net *"_ivl_14", 0 0, L_000001fac6136ba0;  1 drivers
+v000001fac60ce290_0 .net *"_ivl_15", 0 0, L_000001fac60c6000;  1 drivers
+v000001fac60cd7f0_0 .net *"_ivl_18", 0 0, L_000001fac6135700;  1 drivers
+v000001fac60cd2f0_0 .net *"_ivl_20", 0 0, L_000001fac6136c40;  1 drivers
+v000001fac60ccfd0_0 .net *"_ivl_21", 0 0, L_000001fac60c6070;  1 drivers
+v000001fac60cccb0_0 .net *"_ivl_24", 0 0, L_000001fac61371e0;  1 drivers
+v000001fac60cdb10_0 .net *"_ivl_26", 0 0, L_000001fac6136600;  1 drivers
+v000001fac60cd250_0 .net *"_ivl_27", 0 0, L_000001fac60c60e0;  1 drivers
+v000001fac60ce330_0 .net *"_ivl_3", 0 0, L_000001fac6136a60;  1 drivers
+v000001fac60cd4d0_0 .net *"_ivl_31", 0 0, L_000001fac6136100;  1 drivers
+v000001fac60cd390_0 .net *"_ivl_33", 0 0, L_000001fac6137280;  1 drivers
+v000001fac60cd570_0 .net *"_ivl_4", 0 0, L_000001fac60c5c80;  1 drivers
+v000001fac60ce010_0 .net *"_ivl_8", 0 0, L_000001fac6136240;  1 drivers
+v000001fac60cd070_0 .net *"_ivl_9", 0 0, L_000001fac60c5cf0;  1 drivers
+v000001fac60cd610_0 .net "a", 1 0, L_000001fac61357a0;  1 drivers
+v000001fac60cd6b0_0 .net "en", 0 0, L_000001fac6135840;  1 drivers
+v000001fac60cd750_0 .net "w", 1 0, L_000001fac6136060;  1 drivers
+v000001fac60cd890_0 .net "y", 3 0, L_000001fac6135e80;  1 drivers
+L_000001fac6136a60 .part L_000001fac61357a0, 0, 1;
+L_000001fac6136060 .concat8 [ 1 1 0 0], L_000001fac60c5f90, L_000001fac60c5c80;
+L_000001fac6136240 .part L_000001fac61357a0, 1, 1;
+L_000001fac6135520 .part L_000001fac6136060, 0, 1;
+L_000001fac6136ba0 .part L_000001fac6136060, 1, 1;
+L_000001fac6135700 .part L_000001fac61357a0, 0, 1;
+L_000001fac6136c40 .part L_000001fac6136060, 1, 1;
+L_000001fac61371e0 .part L_000001fac6136060, 0, 1;
+L_000001fac6136600 .part L_000001fac61357a0, 1, 1;
+L_000001fac6135e80 .concat8 [ 1 1 1 1], L_000001fac60c5cf0, L_000001fac60c6000, L_000001fac60c6070, L_000001fac60c60e0;
+L_000001fac6136100 .part L_000001fac61357a0, 0, 1;
+L_000001fac6137280 .part L_000001fac61357a0, 1, 1;
+S_000001fac60a2b20 .scope module, "a2" "decoder2" 3 12, 4 1 0, S_000001fac60d7fe0;
+ .timescale 0 0;
+    .port_info 0 /OUTPUT 4 "y";
+    .port_info 1 /INPUT 2 "a";
+    .port_info 2 /INPUT 1 "en";
+L_000001fac60c5dd0 .functor NOT 1, L_000001fac6135980, C4<0>, C4<0>, C4<0>;
+L_000001fac60c5e40 .functor NOT 1, L_000001fac6135c00, C4<0>, C4<0>, C4<0>;
+L_000001fac60c6150 .functor AND 1, L_000001fac61366a0, L_000001fac6135f20, L_000001fac61394b0, C4<1>;
+L_000001fac6138d30 .functor AND 1, L_000001fac6136ce0, L_000001fac61362e0, L_000001fac61394b0, C4<1>;
+L_000001fac6139120 .functor AND 1, L_000001fac6136420, L_000001fac6136740, L_000001fac61394b0, C4<1>;
+L_000001fac6138550 .functor AND 1, L_000001fac61367e0, L_000001fac6136ec0, L_000001fac61394b0, C4<1>;
+v000001fac60cd930_0 .net *"_ivl_0", 0 0, L_000001fac60c5dd0;  1 drivers
+v000001fac60ce5b0_0 .net *"_ivl_12", 0 0, L_000001fac61366a0;  1 drivers
+v000001fac60cdc50_0 .net *"_ivl_14", 0 0, L_000001fac6135f20;  1 drivers
+v000001fac60ce510_0 .net *"_ivl_15", 0 0, L_000001fac6138d30;  1 drivers
+v000001fac60ce0b0_0 .net *"_ivl_18", 0 0, L_000001fac6136ce0;  1 drivers
+v000001fac60cd9d0_0 .net *"_ivl_20", 0 0, L_000001fac61362e0;  1 drivers
+v000001fac60ce8d0_0 .net *"_ivl_21", 0 0, L_000001fac6139120;  1 drivers
+v000001fac60cdbb0_0 .net *"_ivl_24", 0 0, L_000001fac6136420;  1 drivers
+v000001fac60cde30_0 .net *"_ivl_26", 0 0, L_000001fac6136740;  1 drivers
+v000001fac60ce150_0 .net *"_ivl_27", 0 0, L_000001fac6138550;  1 drivers
+v000001fac60ce3d0_0 .net *"_ivl_3", 0 0, L_000001fac6135980;  1 drivers
+v000001fac60ce650_0 .net *"_ivl_31", 0 0, L_000001fac61367e0;  1 drivers
+v000001fac60ce790_0 .net *"_ivl_33", 0 0, L_000001fac6136ec0;  1 drivers
+v000001fac60c9860_0 .net *"_ivl_4", 0 0, L_000001fac60c5e40;  1 drivers
+v000001fac60c9900_0 .net *"_ivl_8", 0 0, L_000001fac6135c00;  1 drivers
+v000001fac6136560_0 .net *"_ivl_9", 0 0, L_000001fac60c6150;  1 drivers
+v000001fac6135de0_0 .net "a", 1 0, L_000001fac6136920;  1 drivers
+v000001fac6136e20_0 .net "en", 0 0, L_000001fac61394b0;  1 drivers
+v000001fac61369c0_0 .net "w", 1 0, L_000001fac6135ac0;  1 drivers
+v000001fac6135480_0 .net "y", 3 0, L_000001fac6136380;  1 drivers
+L_000001fac6135980 .part L_000001fac6136920, 0, 1;
+L_000001fac6135ac0 .concat8 [ 1 1 0 0], L_000001fac60c5dd0, L_000001fac60c5e40;
+L_000001fac6135c00 .part L_000001fac6136920, 1, 1;
+L_000001fac61366a0 .part L_000001fac6135ac0, 0, 1;
+L_000001fac6135f20 .part L_000001fac6135ac0, 1, 1;
+L_000001fac6136ce0 .part L_000001fac6136920, 0, 1;
+L_000001fac61362e0 .part L_000001fac6135ac0, 1, 1;
+L_000001fac6136420 .part L_000001fac6135ac0, 0, 1;
+L_000001fac6136740 .part L_000001fac6136920, 1, 1;
+L_000001fac6136380 .concat8 [ 1 1 1 1], L_000001fac60c6150, L_000001fac6138d30, L_000001fac6139120, L_000001fac6138550;
+L_000001fac61367e0 .part L_000001fac6136920, 0, 1;
+L_000001fac6136ec0 .part L_000001fac6136920, 1, 1;
+    .scope S_000001fac60d3570;
+T_0 ;
+    %vpi_call 2 8 "$dumpfile", "decoder3.vcd" {0 0 0};
+    %vpi_call 2 9 "$dumpvars", 32'sb00000000000000000000000000000000, S_000001fac60d3570 {0 0 0};
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000001fac6137000_0, 0, 1;
+    %pushi/vec4 7, 7, 3;
+    %store/vec4 v000001fac61364c0_0, 0, 3;
+    %delay 5, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000001fac6137000_0, 0, 1;
+    %pushi/vec4 0, 0, 3;
+    %store/vec4 v000001fac61364c0_0, 0, 3;
+    %delay 5, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000001fac6137000_0, 0, 1;
+    %pushi/vec4 1, 0, 3;
+    %store/vec4 v000001fac61364c0_0, 0, 3;
+    %delay 5, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000001fac6137000_0, 0, 1;
+    %pushi/vec4 2, 0, 3;
+    %store/vec4 v000001fac61364c0_0, 0, 3;
+    %delay 5, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000001fac6137000_0, 0, 1;
+    %pushi/vec4 3, 0, 3;
+    %store/vec4 v000001fac61364c0_0, 0, 3;
+    %delay 5, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000001fac6137000_0, 0, 1;
+    %pushi/vec4 4, 0, 3;
+    %store/vec4 v000001fac61364c0_0, 0, 3;
+    %delay 5, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000001fac6137000_0, 0, 1;
+    %pushi/vec4 5, 0, 3;
+    %store/vec4 v000001fac61364c0_0, 0, 3;
+    %delay 5, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000001fac6137000_0, 0, 1;
+    %pushi/vec4 6, 0, 3;
+    %store/vec4 v000001fac61364c0_0, 0, 3;
+    %delay 5, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000001fac6137000_0, 0, 1;
+    %pushi/vec4 7, 0, 3;
+    %store/vec4 v000001fac61364c0_0, 0, 3;
+    %delay 5, 0;
+    %vpi_call 2 19 "$finish" {0 0 0};
+    %end;
+    .thread T_0;
+    .scope S_000001fac60d3570;
+T_1 ;
+    %vpi_call 2 23 "$monitor", "Time=%d,en=%b a=%b y=%b ", $time, v000001fac6137000_0, v000001fac61364c0_0, v000001fac6135a20_0 {0 0 0};
+    %end;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 5;
+    "N/A";
+    "<interactive>";
+    "Test3.v";
+    "Decoder3.v";
+    "./decoder2.v";

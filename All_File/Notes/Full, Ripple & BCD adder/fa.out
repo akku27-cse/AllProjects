@@ -1,0 +1,109 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1110-g18392a46)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "C:\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
+S_00000205ccae6730 .scope module, "test" "test" 2 1;
+ .timescale 0 0;
+v00000205ccaf44e0_0 .var "a", 0 0;
+v00000205ccaf4440_0 .var "b", 0 0;
+v00000205ccaf4580_0 .var "cin", 0 0;
+v00000205ccaf4620_0 .net "co", 0 0, L_00000205ccae6fc0;  1 drivers
+v00000205ccaf4ee0_0 .net "s", 0 0, L_00000205ccae70a0;  1 drivers
+S_00000205ccae68c0 .scope module, "a1" "fa" 2 4, 3 2 0, S_00000205ccae6730;
+ .timescale 0 0;
+    .port_info 0 /OUTPUT 1 "s";
+    .port_info 1 /OUTPUT 1 "co";
+    .port_info 2 /INPUT 1 "a";
+    .port_info 3 /INPUT 1 "b";
+    .port_info 4 /INPUT 1 "cin";
+L_00000205ccae6fc0 .functor OR 1, L_00000205ccae6f50, L_00000205ccae7110, C4<0>, C4<0>;
+v00000205ccac27e0_0 .net "a", 0 0, v00000205ccaf44e0_0;  1 drivers
+v00000205ccac2880_0 .net "b", 0 0, v00000205ccaf4440_0;  1 drivers
+v00000205ccac2920_0 .net "cin", 0 0, v00000205ccaf4580_0;  1 drivers
+v00000205ccb40840_0 .net "co", 0 0, L_00000205ccae6fc0;  alias, 1 drivers
+v00000205ccaf4c60_0 .net "s", 0 0, L_00000205ccae70a0;  alias, 1 drivers
+v00000205ccaf4120_0 .net "w1", 0 0, L_00000205ccae7180;  1 drivers
+v00000205ccaf4e40_0 .net "w2", 0 0, L_00000205ccae6f50;  1 drivers
+v00000205ccaf4080_0 .net "w3", 0 0, L_00000205ccae7110;  1 drivers
+S_00000205ccaacdf0 .scope module, "a1" "halfadder" 3 6, 4 1 0, S_00000205ccae68c0;
+ .timescale 0 0;
+    .port_info 0 /OUTPUT 1 "s";
+    .port_info 1 /OUTPUT 1 "c";
+    .port_info 2 /INPUT 1 "a";
+    .port_info 3 /INPUT 1 "b";
+L_00000205ccae7180 .functor XOR 1, v00000205ccaf44e0_0, v00000205ccaf4440_0, C4<0>, C4<0>;
+L_00000205ccae6f50 .functor AND 1, v00000205ccaf44e0_0, v00000205ccaf4440_0, C4<1>, C4<1>;
+v00000205ccaacf80_0 .net "a", 0 0, v00000205ccaf44e0_0;  alias, 1 drivers
+v00000205ccaf6420_0 .net "b", 0 0, v00000205ccaf4440_0;  alias, 1 drivers
+v00000205ccaad020_0 .net "c", 0 0, L_00000205ccae6f50;  alias, 1 drivers
+v00000205ccaad0c0_0 .net "s", 0 0, L_00000205ccae7180;  alias, 1 drivers
+S_00000205ccac2510 .scope module, "a2" "halfadder" 3 7, 4 1 0, S_00000205ccae68c0;
+ .timescale 0 0;
+    .port_info 0 /OUTPUT 1 "s";
+    .port_info 1 /OUTPUT 1 "c";
+    .port_info 2 /INPUT 1 "a";
+    .port_info 3 /INPUT 1 "b";
+L_00000205ccae70a0 .functor XOR 1, v00000205ccaf4580_0, L_00000205ccae7180, C4<0>, C4<0>;
+L_00000205ccae7110 .functor AND 1, v00000205ccaf4580_0, L_00000205ccae7180, C4<1>, C4<1>;
+v00000205ccaad160_0 .net "a", 0 0, v00000205ccaf4580_0;  alias, 1 drivers
+v00000205ccaad200_0 .net "b", 0 0, L_00000205ccae7180;  alias, 1 drivers
+v00000205ccac26a0_0 .net "c", 0 0, L_00000205ccae7110;  alias, 1 drivers
+v00000205ccac2740_0 .net "s", 0 0, L_00000205ccae70a0;  alias, 1 drivers
+    .scope S_00000205ccae6730;
+T_0 ;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v00000205ccaf44e0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v00000205ccaf4440_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v00000205ccaf4580_0, 0, 1;
+    %delay 5, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v00000205ccaf4580_0, 0, 1;
+    %delay 5, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v00000205ccaf4440_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v00000205ccaf4580_0, 0, 1;
+    %delay 5, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v00000205ccaf4580_0, 0, 1;
+    %delay 5, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v00000205ccaf44e0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v00000205ccaf4440_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v00000205ccaf4580_0, 0, 1;
+    %delay 5, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v00000205ccaf4580_0, 0, 1;
+    %delay 5, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v00000205ccaf4440_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v00000205ccaf4580_0, 0, 1;
+    %delay 5, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v00000205ccaf4580_0, 0, 1;
+    %delay 5, 0;
+    %vpi_call 2 14 "$finish" {0 0 0};
+    %end;
+    .thread T_0;
+    .scope S_00000205ccae6730;
+T_1 ;
+    %vpi_call 2 17 "$monitor", "Time=%d,a=%b b=%b cin=%b s=%b co=%b", $time, v00000205ccaf44e0_0, v00000205ccaf4440_0, v00000205ccaf4580_0, v00000205ccaf4ee0_0, v00000205ccaf4620_0 {0 0 0};
+    %end;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 5;
+    "N/A";
+    "<interactive>";
+    "Testfa.v";
+    "fulladderstruct.v";
+    "./halfadderstruct.v";
