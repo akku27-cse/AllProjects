@@ -1,0 +1,92 @@
+h1{
+	color:  !important red;
+	/* font-style: italic;
+	font-weight: bold;
+	text-decoration: underline;
+	font-family: "Times New Roman", Times, serif; */
+  
+}
+.hh{
+	color: green;
+
+}
+.hh::first-letter{
+color: yellow;
+}
+.paragraph p{
+	line-height:5cm;
+	letter-spacing:2;
+	text-align: center;
+	font-size: 4;
+	border-style: dotted;
+}
+.paragraph::selection{
+	background-color: yellow;
+}
+.paragraph::first-line{
+	color: gray;
+}
+ul{
+	margin: 0px;
+	list-style: none;
+transition: e;
+
+}
+li{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+.button{
+	color: orange;
+	background-color: 
+
+}
+.button:hover{
+	background-color: yellow;
+	color: pink;
+}
+.button:active{
+	background-color: black;
+	color: blue;
+}
+.h1{
+	text-decoration: yellow underline;
+}
+.h1:hover{
+	cursor: pointer;
+	background-color: red;
+	color: blue;
+
+}
+.h1::first-letter{
+	color: green;
+}
+
+
+.paragraph input:checked+label{
+color: green;
+font-weight: bold;
+}
+.paragraph::selection{
+	background-color: yellow;
+}
+.paragraph::first-line{
+	color: gray;
+}
+.input:check+label{
+	color: red;
+	font-style: italic;
+	font-weight: bold;
+
+}
+
+.List li:nth-of-type(2n){
+ color: blue;
+
+}
+.table1 .table:nth-of-type(2n){
+	color: red;
+}
+

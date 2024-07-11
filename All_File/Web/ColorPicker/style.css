@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.popup {
+    width: 350px;
+}
+.popup :where(.picker,header,.all-colors,.color) {
+    display: flex;
+}
+.popup .picker {
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    background: gray;
+}
+.picker #color-picker {
+    outline: none;
+    border: none;
+    border-radius: 35px;
+    color: whitesmoke;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 10px 20px;
+    background: yellowgreen;
+}
+/* .popup{
+    width: 350px;
+}
+.popup .picker{
+padding: 30px 0;
+display: flex;
+justify-content: center;
+background: whitesmoke;
+}
+.picker #color-picker{
+    outline: none;
+    border: none;
+    color: whitesmoke;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 10px 20px;
+    background: yellowgreen;
+} */
+
+.picked-color{
+    margin: 10px 15px;
+}
+
+.picked-color header{
+    justify-content: space-between;
+
+}
+.picked-color .clear-all{
+    color: blue;
+    cursor: pointer;
+    font-size: 18px;
+}
+.all-colors{
+    margin: 10px 0;
+    flex-wrap: wrap;
+
+}
+.all-colors .color .rect{
+    display: block;
+    height: 22px;
+    width: 22px;
+ margin-right: 8px;
+    border-radius: 20px;
+    background:slateblue;
+}
+.all-colors .color{
+    cursor: pointer;
+    margin-bottom: 10px;
+    width: calc(100%/3);
+}
+.all-colors .color .value{
+    font-size: 0.96rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}

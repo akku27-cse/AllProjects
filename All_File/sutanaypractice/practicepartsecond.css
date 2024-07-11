@@ -1,0 +1,32 @@
+ #outer{
+ 	height: 200px;
+ 	width: 70px;
+ 	border: 2px solid black;
+ 	border: dotted;
+ 	margin: 0 auto;
+ }
+ .inner{
+ 	height: 50px;
+ 	width: 50px;
+ 	border-left : 2px solid black;
+ 	border-right : 2px solid yellow;
+ 	border-top: 2px solid orange;
+ 	border-bottom : 2px solid black;
+ 	margin: 10px;
+ }
+ .inner{
+ 	border-radius: 50%;
+
+ 	
+ }
+
+ #r{
+ 	background-color: red;
+
+ }
+ #g{
+ 	background-color: green;
+ }
+ #b{
+ 	background-color: blue;
+ }
