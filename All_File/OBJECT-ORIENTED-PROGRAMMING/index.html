@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Responsive Card Slider</title>
+</head>
+<body>
+  <div class="slider">
+    <div class="card active">
+      <img src="image1.jpg" alt="Card 1">
+      <h3>Card 1</h3>
+      <p>This is the content of Card 1.</p>
+    </div>
+    <div class="card">
+      <img src="image2.jpg" alt="Card 2">
+      <h3>Card 2</h3>
+      <p>This is the content of Card 2.</p>
+    </div>
+     <div class="card">
+      <img src="image2.jpg" alt="Card 2">
+      <h3>Card 2</h3>
+      <p>This is the content of Card 2.</p>
+    </div>
+     <div class="card">
+      <img src="image2.jpg" alt="Card 2">
+      <h3>Card 2</h3>
+      <p>This is the content of Card 2.</p>
+    </div>
+     <div class="card">
+      <img src="image2.jpg" alt="Card 2">
+      <h3>Card 2</h3>
+      <p>This is the content of Card 2.</p>
+    </div>
+    <!-- Add more cards here -->
+  </div>
+  <button class="prev-btn">&lt;</button>
+  <button class="next-btn">&gt;</button>
+  <script>
+    const cards = document.querySelectorAll('.card');
+const prevBtn = document.querySelector('.prev-btn');
+const nextBtn = document.querySelector('.next-btn');
+
+let currentCardIndex = 0;
+
+function showCard(index) {
+  cards.forEach(card => card.classList.remove('active'));
+  cards[index].classList.add('active');
+}
+
+prevBtn.addEventListener('click', () => {
+  currentCardIndex = (currentCardIndex - 1 + cards.length) % cards.length;
+  showCard(currentCardIndex);
+});
+
+nextBtn.addEventListener('click', () => {
+  currentCardIndex = (currentCardIndex + 1) % cards.length;
+  showCard(currentCardIndex);
+});
+
+// Show the initial card
+showCard(currentCardIndex);
+
+  </script>
+</body>
+</html>

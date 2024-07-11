@@ -1,0 +1,5 @@
+number=input("enter any number:")
+print("given number:",number)
+akash=int(number)
+print("given number:",akash)
+print(type(akash))

@@ -1,0 +1,5 @@
+module andgt;
+input x,y;
+output f;
+and and1(f,x,y);
+ endmodule;
