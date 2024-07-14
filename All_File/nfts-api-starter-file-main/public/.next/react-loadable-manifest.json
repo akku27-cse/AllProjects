@@ -1,0 +1,318 @@
+{
+  "..\\node_modules\\@thirdweb-dev\\react\\dist\\useMagic-c0613271.browser.esm.js -> ./magicLink-de5fe521.browser.esm.js": {
+    "id": "..\\node_modules\\@thirdweb-dev\\react\\dist\\useMagic-c0613271.browser.esm.js -> ./magicLink-de5fe521.browser.esm.js",
+    "files": []
+  },
+  "..\\node_modules\\@thirdweb-dev\\react\\dist\\useSafe-f859cfc3.browser.esm.js -> ./safeWallet-26c6c6c5.browser.esm.js": {
+    "id": "..\\node_modules\\@thirdweb-dev\\react\\dist\\useSafe-f859cfc3.browser.esm.js -> ./safeWallet-26c6c6c5.browser.esm.js",
+    "files": []
+  },
+  "..\\node_modules\\@thirdweb-dev\\react\\dist\\useWalletConnect-bf78c02d.browser.esm.js -> ./ModelViewer-68c3eb38.browser.esm.js": {
+    "id": "..\\node_modules\\@thirdweb-dev\\react\\dist\\useWalletConnect-bf78c02d.browser.esm.js -> ./ModelViewer-68c3eb38.browser.esm.js",
+    "files": [
+      "static/chunks/node_modules_thirdweb-dev_react_dist_ModelViewer-68c3eb38_browser_esm_js.js"
+    ]
+  },
+  "..\\node_modules\\@thirdweb-dev\\react\\dist\\useWalletConnect-bf78c02d.browser.esm.js -> ./headlessConnectUI-d7ab9645.browser.esm.js": {
+    "id": "..\\node_modules\\@thirdweb-dev\\react\\dist\\useWalletConnect-bf78c02d.browser.esm.js -> ./headlessConnectUI-d7ab9645.browser.esm.js",
+    "files": []
+  },
+  "..\\node_modules\\@thirdweb-dev\\react\\dist\\useWalletConnect-bf78c02d.browser.esm.js -> ./paperWallet-6bbe13a1.browser.esm.js": {
+    "id": "..\\node_modules\\@thirdweb-dev\\react\\dist\\useWalletConnect-bf78c02d.browser.esm.js -> ./paperWallet-6bbe13a1.browser.esm.js",
+    "files": []
+  },
+  "..\\node_modules\\@thirdweb-dev\\react\\dist\\useWalletConnect-bf78c02d.browser.esm.js -> ./walletConnect-999b71fe.browser.esm.js": {
+    "id": "..\\node_modules\\@thirdweb-dev\\react\\dist\\useWalletConnect-bf78c02d.browser.esm.js -> ./walletConnect-999b71fe.browser.esm.js",
+    "files": []
+  },
+  "..\\node_modules\\@thirdweb-dev\\sdk\\dist\\contract-metadata-88f06ef9.browser.esm.js -> ./edition-b8532b34.browser.esm.js": {
+    "id": "..\\node_modules\\@thirdweb-dev\\sdk\\dist\\contract-metadata-88f06ef9.browser.esm.js -> ./edition-b8532b34.browser.esm.js",
+    "files": [
+      "static/chunks/node_modules_thirdweb-dev_sdk_dist_edition-b8532b34_browser_esm_js.js"
+    ]
+  },
+  "..\\node_modules\\@thirdweb-dev\\sdk\\dist\\contract-metadata-88f06ef9.browser.esm.js -> ./edition-drop-9d7634c8.browser.esm.js": {
+    "id": "..\\node_modules\\@thirdweb-dev\\sdk\\dist\\contract-metadata-88f06ef9.browser.esm.js -> ./edition-drop-9d7634c8.browser.esm.js",
+    "files": [
+      "static/chunks/node_modules_thirdweb-dev_sdk_dist_edition-drop-9d7634c8_browser_esm_js.js"
+    ]
+  },
+  "..\\node_modules\\@thirdweb-dev\\sdk\\dist\\contract-metadata-88f06ef9.browser.esm.js -> ./marketplace-4eba5a7b.browser.esm.js": {
+    "id": "..\\node_modules\\@thirdweb-dev\\sdk\\dist\\contract-metadata-88f06ef9.browser.esm.js -> ./marketplace-4eba5a7b.browser.esm.js",
+    "files": [
+      "static/chunks/node_modules_thirdweb-dev_sdk_dist_marketplace-4eba5a7b_browser_esm_js.js"
+    ]
+  },
+  "..\\node_modules\\@thirdweb-dev\\sdk\\dist\\contract-metadata-88f06ef9.browser.esm.js -> ./marketplacev3-de83f4c2.browser.esm.js": {
+    "id": "..\\node_modules\\@thirdweb-dev\\sdk\\dist\\contract-metadata-88f06ef9.browser.esm.js -> ./marketplacev3-de83f4c2.browser.esm.js",
+    "files": [
+      "static/chunks/node_modules_thirdweb-dev_sdk_dist_marketplacev3-de83f4c2_browser_esm_js.js"
+    ]
+  },
+  "..\\node_modules\\@thirdweb-dev\\sdk\\dist\\contract-metadata-88f06ef9.browser.esm.js -> ./multiwrap-cd0c9c88.browser.esm.js": {
+    "id": "..\\node_modules\\@thirdweb-dev\\sdk\\dist\\contract-metadata-88f06ef9.browser.esm.js -> ./multiwrap-cd0c9c88.browser.esm.js",
+    "files": [
+      "static/chunks/node_modules_thirdweb-dev_sdk_dist_multiwrap-cd0c9c88_browser_esm_js.js"
+    ]
+  },
+  "..\\node_modules\\@thirdweb-dev\\sdk\\dist\\contract-metadata-88f06ef9.browser.esm.js -> ./nft-collection-d29b0868.browser.esm.js": {
+    "id": "..\\node_modules\\@thirdweb-dev\\sdk\\dist\\contract-metadata-88f06ef9.browser.esm.js -> ./nft-collection-d29b0868.browser.esm.js",
+    "files": [
+      "static/chunks/node_modules_thirdweb-dev_sdk_dist_nft-collection-d29b0868_browser_esm_js.js"
+    ]
+  },
+  "..\\node_modules\\@thirdweb-dev\\sdk\\dist\\contract-metadata-88f06ef9.browser.esm.js -> ./nft-drop-42222a2b.browser.esm.js": {
+    "id": "..\\node_modules\\@thirdweb-dev\\sdk\\dist\\contract-metadata-88f06ef9.browser.esm.js -> ./nft-drop-42222a2b.browser.esm.js",
+    "files": [
+      "static/chunks/node_modules_thirdweb-dev_sdk_dist_nft-drop-42222a2b_browser_esm_js.js"
+    ]
+  },
+  "..\\node_modules\\@thirdweb-dev\\sdk\\dist\\contract-metadata-88f06ef9.browser.esm.js -> ./pack-0281a7de.browser.esm.js": {
+    "id": "..\\node_modules\\@thirdweb-dev\\sdk\\dist\\contract-metadata-88f06ef9.browser.esm.js -> ./pack-0281a7de.browser.esm.js",
+    "files": [
+      "static/chunks/node_modules_thirdweb-dev_sdk_dist_pack-0281a7de_browser_esm_js.js"
+    ]
+  },
+  "..\\node_modules\\@thirdweb-dev\\sdk\\dist\\contract-metadata-88f06ef9.browser.esm.js -> ./signature-drop-dfc8c43c.browser.esm.js": {
+    "id": "..\\node_modules\\@thirdweb-dev\\sdk\\dist\\contract-metadata-88f06ef9.browser.esm.js -> ./signature-drop-dfc8c43c.browser.esm.js",
+    "files": [
+      "static/chunks/node_modules_thirdweb-dev_sdk_dist_signature-drop-dfc8c43c_browser_esm_js.js"
+    ]
+  },
+  "..\\node_modules\\@thirdweb-dev\\sdk\\dist\\contract-metadata-88f06ef9.browser.esm.js -> ./split-5845ed11.browser.esm.js": {
+    "id": "..\\node_modules\\@thirdweb-dev\\sdk\\dist\\contract-metadata-88f06ef9.browser.esm.js -> ./split-5845ed11.browser.esm.js",
+    "files": [
+      "static/chunks/node_modules_thirdweb-dev_sdk_dist_split-5845ed11_browser_esm_js.js"
+    ]
+  },
+  "..\\node_modules\\@thirdweb-dev\\sdk\\dist\\contract-metadata-88f06ef9.browser.esm.js -> ./token-c250d37c.browser.esm.js": {
+    "id": "..\\node_modules\\@thirdweb-dev\\sdk\\dist\\contract-metadata-88f06ef9.browser.esm.js -> ./token-c250d37c.browser.esm.js",
+    "files": [
+      "static/chunks/node_modules_thirdweb-dev_sdk_dist_token-c250d37c_browser_esm_js.js"
+    ]
+  },
+  "..\\node_modules\\@thirdweb-dev\\sdk\\dist\\contract-metadata-88f06ef9.browser.esm.js -> ./token-drop-dc105915.browser.esm.js": {
+    "id": "..\\node_modules\\@thirdweb-dev\\sdk\\dist\\contract-metadata-88f06ef9.browser.esm.js -> ./token-drop-dc105915.browser.esm.js",
+    "files": [
+      "static/chunks/node_modules_thirdweb-dev_sdk_dist_token-drop-dc105915_browser_esm_js.js"
+    ]
+  },
+  "..\\node_modules\\@thirdweb-dev\\sdk\\dist\\contract-metadata-88f06ef9.browser.esm.js -> ./vote-eabc46cc.browser.esm.js": {
+    "id": "..\\node_modules\\@thirdweb-dev\\sdk\\dist\\contract-metadata-88f06ef9.browser.esm.js -> ./vote-eabc46cc.browser.esm.js",
+    "files": [
+      "static/chunks/node_modules_thirdweb-dev_sdk_dist_vote-eabc46cc_browser_esm_js.js"
+    ]
+  },
+  "..\\node_modules\\@thirdweb-dev\\sdk\\dist\\contract-metadata-88f06ef9.browser.esm.js -> @thirdweb-dev/contracts-js/dist/abis/DropERC1155.json": {
+    "id": "..\\node_modules\\@thirdweb-dev\\sdk\\dist\\contract-metadata-88f06ef9.browser.esm.js -> @thirdweb-dev/contracts-js/dist/abis/DropERC1155.json",
+    "files": [
+      "static/chunks/node_modules_thirdweb-dev_contracts-js_dist_abis_DropERC1155_json.js"
+    ]
+  },
+  "..\\node_modules\\@thirdweb-dev\\sdk\\dist\\contract-metadata-88f06ef9.browser.esm.js -> @thirdweb-dev/contracts-js/dist/abis/DropERC1155_V2.json": {
+    "id": "..\\node_modules\\@thirdweb-dev\\sdk\\dist\\contract-metadata-88f06ef9.browser.esm.js -> @thirdweb-dev/contracts-js/dist/abis/DropERC1155_V2.json",
+    "files": [
+      "static/chunks/node_modules_thirdweb-dev_contracts-js_dist_abis_DropERC1155_V2_json.js"
+    ]
+  },
+  "..\\node_modules\\@thirdweb-dev\\sdk\\dist\\contract-metadata-88f06ef9.browser.esm.js -> @thirdweb-dev/contracts-js/dist/abis/DropERC20.json": {
+    "id": "..\\node_modules\\@thirdweb-dev\\sdk\\dist\\contract-metadata-88f06ef9.browser.esm.js -> @thirdweb-dev/contracts-js/dist/abis/DropERC20.json",
+    "files": [
+      "static/chunks/node_modules_thirdweb-dev_contracts-js_dist_abis_DropERC20_json.js"
+    ]
+  },
+  "..\\node_modules\\@thirdweb-dev\\sdk\\dist\\contract-metadata-88f06ef9.browser.esm.js -> @thirdweb-dev/contracts-js/dist/abis/DropERC20_V2.json": {
+    "id": "..\\node_modules\\@thirdweb-dev\\sdk\\dist\\contract-metadata-88f06ef9.browser.esm.js -> @thirdweb-dev/contracts-js/dist/abis/DropERC20_V2.json",
+    "files": [
+      "static/chunks/node_modules_thirdweb-dev_contracts-js_dist_abis_DropERC20_V2_json.js"
+    ]
+  },
+  "..\\node_modules\\@thirdweb-dev\\sdk\\dist\\contract-metadata-88f06ef9.browser.esm.js -> @thirdweb-dev/contracts-js/dist/abis/DropERC721.json": {
+    "id": "..\\node_modules\\@thirdweb-dev\\sdk\\dist\\contract-metadata-88f06ef9.browser.esm.js -> @thirdweb-dev/contracts-js/dist/abis/DropERC721.json",
+    "files": [
+      "static/chunks/node_modules_thirdweb-dev_contracts-js_dist_abis_DropERC721_json.js"
+    ]
+  },
+  "..\\node_modules\\@thirdweb-dev\\sdk\\dist\\contract-metadata-88f06ef9.browser.esm.js -> @thirdweb-dev/contracts-js/dist/abis/DropERC721_V3.json": {
+    "id": "..\\node_modules\\@thirdweb-dev\\sdk\\dist\\contract-metadata-88f06ef9.browser.esm.js -> @thirdweb-dev/contracts-js/dist/abis/DropERC721_V3.json",
+    "files": [
+      "static/chunks/node_modules_thirdweb-dev_contracts-js_dist_abis_DropERC721_V3_json.js"
+    ]
+  },
+  "..\\node_modules\\@thirdweb-dev\\sdk\\dist\\contract-metadata-88f06ef9.browser.esm.js -> @thirdweb-dev/contracts-js/dist/abis/Marketplace.json": {
+    "id": "..\\node_modules\\@thirdweb-dev\\sdk\\dist\\contract-metadata-88f06ef9.browser.esm.js -> @thirdweb-dev/contracts-js/dist/abis/Marketplace.json",
+    "files": [
+      "static/chunks/node_modules_thirdweb-dev_contracts-js_dist_abis_Marketplace_json.js"
+    ]
+  },
+  "..\\node_modules\\@thirdweb-dev\\sdk\\dist\\contract-metadata-88f06ef9.browser.esm.js -> @thirdweb-dev/contracts-js/dist/abis/MarketplaceV3.json": {
+    "id": "..\\node_modules\\@thirdweb-dev\\sdk\\dist\\contract-metadata-88f06ef9.browser.esm.js -> @thirdweb-dev/contracts-js/dist/abis/MarketplaceV3.json",
+    "files": [
+      "static/chunks/node_modules_thirdweb-dev_contracts-js_dist_abis_MarketplaceV3_json.js"
+    ]
+  },
+  "..\\node_modules\\@thirdweb-dev\\sdk\\dist\\contract-metadata-88f06ef9.browser.esm.js -> @thirdweb-dev/contracts-js/dist/abis/Multiwrap.json": {
+    "id": "..\\node_modules\\@thirdweb-dev\\sdk\\dist\\contract-metadata-88f06ef9.browser.esm.js -> @thirdweb-dev/contracts-js/dist/abis/Multiwrap.json",
+    "files": [
+      "static/chunks/node_modules_thirdweb-dev_contracts-js_dist_abis_Multiwrap_json.js"
+    ]
+  },
+  "..\\node_modules\\@thirdweb-dev\\sdk\\dist\\contract-metadata-88f06ef9.browser.esm.js -> @thirdweb-dev/contracts-js/dist/abis/Pack.json": {
+    "id": "..\\node_modules\\@thirdweb-dev\\sdk\\dist\\contract-metadata-88f06ef9.browser.esm.js -> @thirdweb-dev/contracts-js/dist/abis/Pack.json",
+    "files": [
+      "static/chunks/node_modules_thirdweb-dev_contracts-js_dist_abis_Pack_json.js"
+    ]
+  },
+  "..\\node_modules\\@thirdweb-dev\\sdk\\dist\\contract-metadata-88f06ef9.browser.esm.js -> @thirdweb-dev/contracts-js/dist/abis/SignatureDrop.json": {
+    "id": "..\\node_modules\\@thirdweb-dev\\sdk\\dist\\contract-metadata-88f06ef9.browser.esm.js -> @thirdweb-dev/contracts-js/dist/abis/SignatureDrop.json",
+    "files": [
+      "static/chunks/node_modules_thirdweb-dev_contracts-js_dist_abis_SignatureDrop_json.js"
+    ]
+  },
+  "..\\node_modules\\@thirdweb-dev\\sdk\\dist\\contract-metadata-88f06ef9.browser.esm.js -> @thirdweb-dev/contracts-js/dist/abis/SignatureDrop_V4.json": {
+    "id": "..\\node_modules\\@thirdweb-dev\\sdk\\dist\\contract-metadata-88f06ef9.browser.esm.js -> @thirdweb-dev/contracts-js/dist/abis/SignatureDrop_V4.json",
+    "files": [
+      "static/chunks/node_modules_thirdweb-dev_contracts-js_dist_abis_SignatureDrop_V4_json.js"
+    ]
+  },
+  "..\\node_modules\\@thirdweb-dev\\sdk\\dist\\contract-metadata-88f06ef9.browser.esm.js -> @thirdweb-dev/contracts-js/dist/abis/Split.json": {
+    "id": "..\\node_modules\\@thirdweb-dev\\sdk\\dist\\contract-metadata-88f06ef9.browser.esm.js -> @thirdweb-dev/contracts-js/dist/abis/Split.json",
+    "files": [
+      "static/chunks/node_modules_thirdweb-dev_contracts-js_dist_abis_Split_json.js"
+    ]
+  },
+  "..\\node_modules\\@thirdweb-dev\\sdk\\dist\\contract-metadata-88f06ef9.browser.esm.js -> @thirdweb-dev/contracts-js/dist/abis/TokenERC1155.json": {
+    "id": "..\\node_modules\\@thirdweb-dev\\sdk\\dist\\contract-metadata-88f06ef9.browser.esm.js -> @thirdweb-dev/contracts-js/dist/abis/TokenERC1155.json",
+    "files": [
+      "static/chunks/node_modules_thirdweb-dev_contracts-js_dist_abis_TokenERC1155_json.js"
+    ]
+  },
+  "..\\node_modules\\@thirdweb-dev\\sdk\\dist\\contract-metadata-88f06ef9.browser.esm.js -> @thirdweb-dev/contracts-js/dist/abis/TokenERC20.json": {
+    "id": "..\\node_modules\\@thirdweb-dev\\sdk\\dist\\contract-metadata-88f06ef9.browser.esm.js -> @thirdweb-dev/contracts-js/dist/abis/TokenERC20.json",
+    "files": [
+      "static/chunks/node_modules_thirdweb-dev_contracts-js_dist_abis_TokenERC20_json.js"
+    ]
+  },
+  "..\\node_modules\\@thirdweb-dev\\sdk\\dist\\contract-metadata-88f06ef9.browser.esm.js -> @thirdweb-dev/contracts-js/dist/abis/TokenERC721.json": {
+    "id": "..\\node_modules\\@thirdweb-dev\\sdk\\dist\\contract-metadata-88f06ef9.browser.esm.js -> @thirdweb-dev/contracts-js/dist/abis/TokenERC721.json",
+    "files": [
+      "static/chunks/node_modules_thirdweb-dev_contracts-js_dist_abis_TokenERC721_json.js"
+    ]
+  },
+  "..\\node_modules\\@thirdweb-dev\\sdk\\dist\\contract-metadata-88f06ef9.browser.esm.js -> @thirdweb-dev/contracts-js/dist/abis/VoteERC20.json": {
+    "id": "..\\node_modules\\@thirdweb-dev\\sdk\\dist\\contract-metadata-88f06ef9.browser.esm.js -> @thirdweb-dev/contracts-js/dist/abis/VoteERC20.json",
+    "files": [
+      "static/chunks/node_modules_thirdweb-dev_contracts-js_dist_abis_VoteERC20_json.js"
+    ]
+  },
+  "..\\node_modules\\@thirdweb-dev\\sdk\\dist\\contract-metadata-88f06ef9.browser.esm.js -> @thirdweb-dev/contracts-js/factories/TWProxy__factory": {
+    "id": "..\\node_modules\\@thirdweb-dev\\sdk\\dist\\contract-metadata-88f06ef9.browser.esm.js -> @thirdweb-dev/contracts-js/factories/TWProxy__factory",
+    "files": [
+      "static/chunks/node_modules_thirdweb-dev_contracts-js_factories_TWProxy__factory_dist_thirdweb-dev-contracts-713e7d.js"
+    ]
+  },
+  "..\\node_modules\\@thirdweb-dev\\wallets\\dist\\smart-wallet-d213c48a.browser.esm.js -> ../evm/connectors/smart-wallet/dist/thirdweb-dev-wallets-evm-connectors-smart-wallet.browser.esm.js": {
+    "id": "..\\node_modules\\@thirdweb-dev\\wallets\\dist\\smart-wallet-d213c48a.browser.esm.js -> ../evm/connectors/smart-wallet/dist/thirdweb-dev-wallets-evm-connectors-smart-wallet.browser.esm.js",
+    "files": [
+      "static/chunks/node_modules_thirdweb-dev_wallets_evm_connectors_smart-wallet_dist_thirdweb-dev-wallets-evm-c-b40663.js"
+    ]
+  },
+  "..\\node_modules\\@thirdweb-dev\\wallets\\evm\\connectors\\coinbase-wallet\\dist\\thirdweb-dev-wallets-evm-connectors-coinbase-wallet.browser.esm.js -> @coinbase/wallet-sdk": {
+    "id": "..\\node_modules\\@thirdweb-dev\\wallets\\evm\\connectors\\coinbase-wallet\\dist\\thirdweb-dev-wallets-evm-connectors-coinbase-wallet.browser.esm.js -> @coinbase/wallet-sdk",
+    "files": [
+      "static/chunks/node_modules_coinbase_wallet-sdk_dist_index_js.js"
+    ]
+  },
+  "..\\node_modules\\@thirdweb-dev\\wallets\\evm\\connectors\\paper\\dist\\thirdweb-dev-wallets-evm-connectors-paper.browser.esm.js -> @paperxyz/embedded-wallet-service-sdk": {
+    "id": "..\\node_modules\\@thirdweb-dev\\wallets\\evm\\connectors\\paper\\dist\\thirdweb-dev-wallets-evm-connectors-paper.browser.esm.js -> @paperxyz/embedded-wallet-service-sdk",
+    "files": []
+  },
+  "..\\node_modules\\@thirdweb-dev\\wallets\\evm\\connectors\\wallet-connect-v1\\dist\\thirdweb-dev-wallets-evm-connectors-wallet-connect-v1.browser.esm.js -> ../../../../dist/index-42b0f5f5.browser.esm.js": {
+    "id": "..\\node_modules\\@thirdweb-dev\\wallets\\evm\\connectors\\wallet-connect-v1\\dist\\thirdweb-dev-wallets-evm-connectors-wallet-connect-v1.browser.esm.js -> ../../../../dist/index-42b0f5f5.browser.esm.js",
+    "files": [
+      "static/chunks/node_modules_thirdweb-dev_wallets_dist_index-42b0f5f5_browser_esm_js.js"
+    ]
+  },
+  "..\\node_modules\\@thirdweb-dev\\wallets\\evm\\connectors\\wallet-connect\\dist\\thirdweb-dev-wallets-evm-connectors-wallet-connect.browser.esm.js -> @walletconnect/ethereum-provider": {
+    "id": "..\\node_modules\\@thirdweb-dev\\wallets\\evm\\connectors\\wallet-connect\\dist\\thirdweb-dev-wallets-evm-connectors-wallet-connect.browser.esm.js -> @walletconnect/ethereum-provider",
+    "files": [
+      "static/chunks/node_modules_walletconnect_ethereum-provider_dist_index_es_js.js"
+    ]
+  },
+  "..\\node_modules\\@thirdweb-dev\\wallets\\evm\\wallets\\coinbase-wallet\\dist\\thirdweb-dev-wallets-evm-wallets-coinbase-wallet.browser.esm.js -> ../../../connectors/coinbase-wallet/dist/thirdweb-dev-wallets-evm-connectors-coinbase-wallet.browser.esm.js": {
+    "id": "..\\node_modules\\@thirdweb-dev\\wallets\\evm\\wallets\\coinbase-wallet\\dist\\thirdweb-dev-wallets-evm-wallets-coinbase-wallet.browser.esm.js -> ../../../connectors/coinbase-wallet/dist/thirdweb-dev-wallets-evm-connectors-coinbase-wallet.browser.esm.js",
+    "files": [
+      "static/chunks/node_modules_thirdweb-dev_wallets_evm_connectors_coinbase-wallet_dist_thirdweb-dev-wallets-ev-f2b4c7.js"
+    ]
+  },
+  "..\\node_modules\\@thirdweb-dev\\wallets\\evm\\wallets\\injected\\dist\\thirdweb-dev-wallets-evm-wallets-injected.browser.esm.js -> ../../../connectors/injected/dist/thirdweb-dev-wallets-evm-connectors-injected.browser.esm.js": {
+    "id": "..\\node_modules\\@thirdweb-dev\\wallets\\evm\\wallets\\injected\\dist\\thirdweb-dev-wallets-evm-wallets-injected.browser.esm.js -> ../../../connectors/injected/dist/thirdweb-dev-wallets-evm-connectors-injected.browser.esm.js",
+    "files": [
+      "static/chunks/node_modules_thirdweb-dev_wallets_evm_connectors_injected_dist_thirdweb-dev-wallets-evm-conne-b60830.js"
+    ]
+  },
+  "..\\node_modules\\@thirdweb-dev\\wallets\\evm\\wallets\\local-wallet\\dist\\thirdweb-dev-wallets-evm-wallets-local-wallet.browser.esm.js -> ../../../connectors/local-wallet/dist/thirdweb-dev-wallets-evm-connectors-local-wallet.browser.esm.js": {
+    "id": "..\\node_modules\\@thirdweb-dev\\wallets\\evm\\wallets\\local-wallet\\dist\\thirdweb-dev-wallets-evm-wallets-local-wallet.browser.esm.js -> ../../../connectors/local-wallet/dist/thirdweb-dev-wallets-evm-connectors-local-wallet.browser.esm.js",
+    "files": [
+      "static/chunks/node_modules_thirdweb-dev_wallets_evm_connectors_local-wallet_dist_thirdweb-dev-wallets-evm-c-fc433e.js"
+    ]
+  },
+  "..\\node_modules\\@thirdweb-dev\\wallets\\evm\\wallets\\local-wallet\\dist\\thirdweb-dev-wallets-evm-wallets-local-wallet.browser.esm.js -> crypto-js": {
+    "id": "..\\node_modules\\@thirdweb-dev\\wallets\\evm\\wallets\\local-wallet\\dist\\thirdweb-dev-wallets-evm-wallets-local-wallet.browser.esm.js -> crypto-js",
+    "files": [
+      "static/chunks/node_modules_crypto-js_index_js.js"
+    ]
+  },
+  "..\\node_modules\\@thirdweb-dev\\wallets\\evm\\wallets\\magic\\dist\\thirdweb-dev-wallets-evm-wallets-magic.browser.esm.js -> ../../../connectors/magic/dist/thirdweb-dev-wallets-evm-connectors-magic.browser.esm.js": {
+    "id": "..\\node_modules\\@thirdweb-dev\\wallets\\evm\\wallets\\magic\\dist\\thirdweb-dev-wallets-evm-wallets-magic.browser.esm.js -> ../../../connectors/magic/dist/thirdweb-dev-wallets-evm-connectors-magic.browser.esm.js",
+    "files": [
+      "static/chunks/node_modules_thirdweb-dev_wallets_evm_connectors_magic_dist_thirdweb-dev-wallets-evm-connecto-ac0b8a.js"
+    ]
+  },
+  "..\\node_modules\\@thirdweb-dev\\wallets\\evm\\wallets\\metamask\\dist\\thirdweb-dev-wallets-evm-wallets-metamask.browser.esm.js -> ../../../connectors/metamask/dist/thirdweb-dev-wallets-evm-connectors-metamask.browser.esm.js": {
+    "id": "..\\node_modules\\@thirdweb-dev\\wallets\\evm\\wallets\\metamask\\dist\\thirdweb-dev-wallets-evm-wallets-metamask.browser.esm.js -> ../../../connectors/metamask/dist/thirdweb-dev-wallets-evm-connectors-metamask.browser.esm.js",
+    "files": [
+      "static/chunks/node_modules_thirdweb-dev_wallets_evm_connectors_metamask_dist_thirdweb-dev-wallets-evm-conne-d3bd03.js"
+    ]
+  },
+  "..\\node_modules\\@thirdweb-dev\\wallets\\evm\\wallets\\metamask\\dist\\thirdweb-dev-wallets-evm-wallets-metamask.browser.esm.js -> ../../../connectors/wallet-connect-v1/dist/thirdweb-dev-wallets-evm-connectors-wallet-connect-v1.browser.esm.js": {
+    "id": "..\\node_modules\\@thirdweb-dev\\wallets\\evm\\wallets\\metamask\\dist\\thirdweb-dev-wallets-evm-wallets-metamask.browser.esm.js -> ../../../connectors/wallet-connect-v1/dist/thirdweb-dev-wallets-evm-connectors-wallet-connect-v1.browser.esm.js",
+    "files": [
+      "static/chunks/node_modules_thirdweb-dev_wallets_evm_connectors_wallet-connect-v1_dist_thirdweb-dev-wallets--dd5381.js"
+    ]
+  },
+  "..\\node_modules\\@thirdweb-dev\\wallets\\evm\\wallets\\paper-wallet\\dist\\thirdweb-dev-wallets-evm-wallets-paper-wallet.browser.esm.js -> ../../../connectors/paper/dist/thirdweb-dev-wallets-evm-connectors-paper.browser.esm.js": {
+    "id": "..\\node_modules\\@thirdweb-dev\\wallets\\evm\\wallets\\paper-wallet\\dist\\thirdweb-dev-wallets-evm-wallets-paper-wallet.browser.esm.js -> ../../../connectors/paper/dist/thirdweb-dev-wallets-evm-connectors-paper.browser.esm.js",
+    "files": [
+      "static/chunks/node_modules_thirdweb-dev_wallets_evm_connectors_paper_dist_thirdweb-dev-wallets-evm-connecto-641c3f.js"
+    ]
+  },
+  "..\\node_modules\\@thirdweb-dev\\wallets\\evm\\wallets\\safe\\dist\\thirdweb-dev-wallets-evm-wallets-safe.browser.esm.js -> ../../../connectors/safe/dist/thirdweb-dev-wallets-evm-connectors-safe.browser.esm.js": {
+    "id": "..\\node_modules\\@thirdweb-dev\\wallets\\evm\\wallets\\safe\\dist\\thirdweb-dev-wallets-evm-wallets-safe.browser.esm.js -> ../../../connectors/safe/dist/thirdweb-dev-wallets-evm-connectors-safe.browser.esm.js",
+    "files": []
+  },
+  "..\\node_modules\\@thirdweb-dev\\wallets\\evm\\wallets\\wallet-connect-v1\\dist\\thirdweb-dev-wallets-evm-wallets-wallet-connect-v1.browser.esm.js -> ../../../connectors/wallet-connect-v1/dist/thirdweb-dev-wallets-evm-connectors-wallet-connect-v1.browser.esm.js": {
+    "id": "..\\node_modules\\@thirdweb-dev\\wallets\\evm\\wallets\\wallet-connect-v1\\dist\\thirdweb-dev-wallets-evm-wallets-wallet-connect-v1.browser.esm.js -> ../../../connectors/wallet-connect-v1/dist/thirdweb-dev-wallets-evm-connectors-wallet-connect-v1.browser.esm.js",
+    "files": [
+      "static/chunks/node_modules_thirdweb-dev_wallets_evm_connectors_wallet-connect-v1_dist_thirdweb-dev-wallets--dd5381.js"
+    ]
+  },
+  "..\\node_modules\\@thirdweb-dev\\wallets\\evm\\wallets\\wallet-connect\\dist\\thirdweb-dev-wallets-evm-wallets-wallet-connect.browser.esm.js -> ../../../connectors/wallet-connect/dist/thirdweb-dev-wallets-evm-connectors-wallet-connect.browser.esm.js": {
+    "id": "..\\node_modules\\@thirdweb-dev\\wallets\\evm\\wallets\\wallet-connect\\dist\\thirdweb-dev-wallets-evm-wallets-wallet-connect.browser.esm.js -> ../../../connectors/wallet-connect/dist/thirdweb-dev-wallets-evm-connectors-wallet-connect.browser.esm.js",
+    "files": [
+      "static/chunks/node_modules_thirdweb-dev_wallets_evm_connectors_wallet-connect_dist_thirdweb-dev-wallets-evm-2efe37.js"
+    ]
+  },
+  "..\\node_modules\\@walletconnect\\ethereum-provider\\dist\\index.es.js -> @web3modal/standalone": {
+    "id": "..\\node_modules\\@walletconnect\\ethereum-provider\\dist\\index.es.js -> @web3modal/standalone",
+    "files": [
+      "static/chunks/node_modules_web3modal_standalone_dist_index_es_js.js"
+    ]
+  },
+  "..\\node_modules\\@web3modal\\standalone\\dist\\index.es.js -> @web3modal/ui": {
+    "id": "..\\node_modules\\@web3modal\\standalone\\dist\\index.es.js -> @web3modal/ui",
+    "files": [
+      "static/chunks/node_modules_web3modal_ui_dist_index_es_js.js"
+    ]
+  }
+}

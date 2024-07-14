@@ -1,0 +1,86 @@
+.card{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    box-shadow: 0 10px 20px black;
+    padding: 32px;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: all 0.5s cubic-bezier(0.23,1,0.32,1);
+}
+.number{
+    background: linear-gradient(-45deg,orange 0%,red 100%);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    margin-left: 1rem;
+
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+    gap: 20px;
+    color: white;
+    transition: all 0.5s cubic-bezier(0.23,1,0.32,1);
+}
+.content .heading{
+    font-weight: 700;
+    font-size: 32px;
+
+}
+.content .para{
+    padding-left: 1rem;
+
+}
+.content .btn{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    border: none;
+    cursor: none;
+    background:linear-gradient(-45deg,orange 0%,red 100%);
+    border-radius: 5px;
+    box-shadow: 0 5px 10px black;
+
+}
+.card::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5px;
+    background:linear-gradient(-45deg,orange 0%,red 100%);
+    z-index: -1;
+    transition:all 0.5s cubic-bezier(0.23,1,0.32,1);
+}
+.card:hover::before{
+    height: 100%;
+}
+.card:hover{
+    box-shadow: none;
+
+}
+.card:hover .btn{
+    color: black;
+    background: white;
+}
+.content .btn:hover{
+    outline: 2px solid white;
+    background: transparent;
+    color: white;
+}
+.content .btn:active{
+    box-shadow: none;
+
+}
+.iamge{
+    border-radius: 0.5rem;
+    object-fit: cover;
+    box-shadow: 4px 4px 30px black;
+}
