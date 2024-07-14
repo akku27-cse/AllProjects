@@ -1,0 +1,18 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(0deg, rgb(30, 30, 50), rgb(10, 10, 30));
+    min-height: 100vh;
+}
+
+canvas {
+    background: transparent;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}

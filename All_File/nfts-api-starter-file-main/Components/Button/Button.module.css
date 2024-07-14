@@ -1,0 +1,36 @@
+.button{
+    position: relative;
+    overflow: hidden;
+    height: 3rem;
+    padding: 0 2rem;
+    border-radius: 1.5rem;
+    background:linear-gradient(orange 0%,red 100%);
+    background-size: 400%;
+    color: white;
+    border: none;
+    box-shadow: 4px 4px 30px rgba(0,0,0,0.2);
+    margin-top: 1rem;
+
+}
+
+.button:hover::before{
+    transform: scaleX(1);
+}
+.button_content{
+    position:relative;
+    z-index: 1;
+
+}
+.button::before{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    width: 100%;
+    height: inherit;
+    border-radius: inherit;
+    background: linear-gradient(-45deg,orange 0%,red 100%);
+    transition: all 0.47;
+}
