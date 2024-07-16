@@ -1,0 +1,25 @@
+*{
+	margin: 0;
+padding: 0;
+
+}
+div{
+	height: 10;
+	font-weight: 10;
+	align-self: center;
+    text-align: center;
+    font-size: 10;
+    font-weight: 20;
+
+}
+.button button{
+	line-height: 1;
+	letter-spacing: 2;
+	lighting-color: transparent;
+	list-style: bengali;
+	list-style-position: 7;
+	color: red;
+	background-color: blue;
+	font-weight: 10px;
+
+}

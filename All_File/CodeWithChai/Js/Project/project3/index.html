@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+</head>
+<body>
+    <div>
+
+    </div>
+    <script>
+    const time=document.querySelector('div');
+    // const date=new Date()
+    // const result=date.getTime().toString()
+    // time.innerHTML=result
+    setInterval(function(){
+         const date=new Date()
+         const result=date.toLocaleTimeString();
+         time.innerHTML=result
+    },1000);
+
+    </script>
+</body>
+</html>

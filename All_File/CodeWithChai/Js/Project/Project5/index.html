@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>Start</button>
+    <button>stop</button>
+    <script>
+let color="0123456789ABCDEF";
+let main;
+setInterval(function(){
+
+    for(let i=0;i<6;i++){
+         main=(Math.floor(Math.random(color)*1000000));
+        console.log(main)
+    }
+},2000)
+
+document.querySelector('button').addEventListener('click',function(e){
+    console.log(e)
+    e.target.value
+
+})
+    </script>
+</body>
+</html>

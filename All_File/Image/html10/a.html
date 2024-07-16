@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title></title>
+</head>
+<style type="text/css">
+	*{
+		margin: 0;
+		padding: 0;
+		font-family: 'Akaya Telivgala',cursive;
+	}
+	body{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-height: 100vh;
+		background: #010109;
+	}
+
+	.textBx span{
+		color: #545454;
+		font-size: 2.5em;
+        text-transform: uppercase;
+        animation: animate 8s linear infinite;
+        animation-delay: calc(.5s * var(--i));
+        opacity: 0;
+	}
+
+	.textBx span:nth-child(1){
+		marker-start:  30px;
+	}
+	.textBx span:nth-child(6){
+		margin-left: 30px;
+	}
+	.textBx span:nth-child(14){
+		marker-start: 30PX;
+	}
+	@keyframes animate{
+		0%{
+			opacity: 0;
+
+		}
+		50%{
+			opacity: 1;
+			color: #ff066a;
+			text-shadow: 0 0 10px #ff066a,
+			              0 0 20px #ff066a,
+			               0 0 40px #ff066a,
+			                0 0 80px #ff066a,
+			                 0 0 160px #ff066a;
+		}
+		100%{
+			opacity: 0;
+		}
+	}
+
+</style>
+<body>
+	<div class="textBx">
+		<span style="--i: 1;">H</span>
+		<span style="--i: 2;">A</span>
+		<span style="--i: 3;">P</span>
+		<span style="--i: 4;">P</span>
+		<span style="--i: 5;">Y</span>
+		<span style="--i: 6;">B</span>
+		<span style="--i: 7;">I</span>
+		<span style="--i: 8;">R</span>
+		<span style="--i: 9;">T</span>
+		<span style="--i: 10;">H</span>
+		<span style="--i: 11;">D</span>
+		<span style="--i: 12;">A</span>
+		<span style="--i: 13;">Y</span>
+		<span style="--i: 14;">K</span>
+		<span style="--i: 15;">U</span>
+		<span style="--i: 16;">T</span>
+		<span style="--i: 17;">T</span>
+		<span style="--i: 18;">I</span>
+		
+	</div>
+
+</body>
+</html>

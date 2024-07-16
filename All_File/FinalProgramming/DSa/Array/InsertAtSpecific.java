@@ -1,0 +1,15 @@
+public class InsertAtSpecific {
+    public static void main(String[] args) {
+        int arr[  ] = { 1, 2, 3, 4, 5, 6, 7 };
+int pos=4,value=9;
+for (int i = (arr.length - 1); i >= (pos - 1); i--) {
+    arr[i + 1] = arr[i];
+}
+        arr[pos - 1] = value;
+
+        for (int i = 0; i < arr.length; i++) {
+            System.out.println(arr[i]);
+
+        }
+    }
+}

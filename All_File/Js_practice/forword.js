@@ -1,0 +1,3 @@
+goForward = () =>{
+    window.history.forward()
+}

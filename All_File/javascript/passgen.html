@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>random password generator use core java script</title>
+	<link rel="stylesheet" type="text/css" href="passgen.css">
+</head>
+<body>
+	<form>
+		<div>
+		<h2>PassWord Generator</h2>
+				<span id="box">Testing</span>
+         
+               <label id="passlen">PassWord Length <input type="number" name="passwordLength" min="2" max="16"></label>
+               <br>
+               <label id="Uppercase1">Contain Uppercase<input type="checkbox" name="Uppercase"></label>
+               <br>
+               <label id="Lowercase1">Contain Lowercase<input type="checkbox" name="Lowercase"></label>
+                              <br>
+               <label id="number1">Contain Number<input type="checkbox" name="Lowercase"></label>
+                              <br>
+               <label id="symbol1">Contain Symbol<input type="checkbox" name="Lowercase"></label>
+               <br>
+               <button id="generator" value="submit">Generate PassWord</button>
+
+         
+
+	</div>
+</form>
+	<script type="text/javascript" >
+		const Uppercase="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+         const Lowercase="abcdefghijklmnopqrstuvwxyz"
+         const number="01234546789"
+         const symbol="`~!@$%^&*()/*-+"
+
+         function random(dataset) {
+         	// body...
+         	return dataset[Math.floor(Math.random()* dataset.length)]
+
+         }
+         // amkeing selector
+         const paslen=document.getElementById("passlen")
+         const upper=document.getElementById("Uppercase1")
+         const lower=document.getElementById("Lowercase1")
+         const num=document.getElementById("number1")
+         const sym=document.getElementById("symbol1")
+         const passbox=document.getElementById("box")
+         
+         
+         function ranpassword(password=""){
+            if(upper.checked){
+                password += random(Uppercase)
+            }
+
+         }
+
+
+
+
+
+        
+document.getElementById("generator").addEventListener(
+    "click"
+    function(){
+        ranpassword();
+    }
+)
+
+random();
+	</script>
+
+</body>
+</html>

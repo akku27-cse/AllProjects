@@ -1,0 +1,39 @@
+*{
+	margin: 0;
+	padding: 0;
+
+}
+body{
+	background-color: blue;
+}
+div{
+	text-align: center;
+	height: 200px;
+	width: 100%;
+	margin-top: 300PX;
+	/*margin-left: 100px;*/
+	margin-right:100px ;
+	border-radius: 25px;
+	background-color: black;
+
+}
+div h2{
+	color: red;
+}
+div label{
+	color: blue;
+}
+div button{
+	color: blue;
+	
+	font-style: italic;
+	font-weight: bold;
+	border-radius: 12px;
+}
+div button:hover{
+	border-color: green;
+	transition:all;
+	transition-duration: 3s;
+	color: red;
+	
+}
