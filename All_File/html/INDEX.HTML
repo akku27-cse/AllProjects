@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+    
+
+        <input type="text" name="" id="myinput" placeholder="search id..." onkeyup=" searchFun()">
+	<div class="container">
+    <table Id="mytable">
+    	<thead>
+    		<tr>
+    		<td style="width: 40%">ID</td>
+    		<td style="width: 30%">Date</td>
+    		<td style="width: 30%">Number of chats</td>
+    		<td style="width: 30%">number of misscaall</td>
+    		
+    	</tr>
+    	</thead>
+    	<tr>
+    		<td>4fd36000001</td>
+    		<td>2021.08.09 T00:00:000z</td>
+    		<td>121</td>
+    		<td>0</td>
+    		
+    	</tr>
+    	
+    	<tr>
+    		<td>4fd36000002</td>
+    		<td>2021.08.09 T00::000z</td>
+    		<td>13</td>
+    		<td>0</td>
+    		
+    	</tr>
+    	<tr>
+    		<td>4fd36000003</td>
+    		<td>2021.08.09 T00:00:000z</td>
+    		<td>232</td>
+    		<td>9</td>
+    		
+    	</tr>
+    	<tr>
+    		<td>4fd36000004</td>
+    		<td>2021.08.09 T00:00:000z</td>
+    		<td>1</td>
+    		<td>0</td>
+    		
+    	</tr>
+    	<tr>
+    		<td>4fd36000005</td>
+    		<td>2021.08.09 T00:00:000z</td>
+    		<td>11</td>
+    		<td>11</td>
+    		
+    	</tr>
+    	<tr>
+    		<td>4fd36000006</td>
+    		<td>2021.08.10 T00:00:000z</td>
+    		<td>85</td>
+    		<td>4</td>
+    		
+    	</tr>
+    	<tr>
+    		<td>4fd36000007</td>
+    		<td>2021.08.09 T00:00:000z</td>
+    		<td>127</td>
+    		<td>33</td>
+    		
+    	</tr>
+    	<tr>
+    		<td>4fd36000008</td>
+    		<td>2021.08.09 T00:00:000z</td>
+    		<td>156</td>
+    		<td>17</td>
+    		
+    	</tr>
+    	<tr>
+    		<td>4fd36000009</td>
+    		<td>2021.08.10 T00:00:000z</td>
+    		<td>121</td>
+    		<td>0</td>
+    		
+    	</tr>
+    	<tr>
+    		<td>4fd360000010</td>
+    		<td>2021.08.09 T00:00:000z</td>
+    		<td>14</td>
+    		<td>0</td>
+    		
+    	</tr>
+    	   
+    </table>		
+	</div>
+
+
+<script>
+	const searchFun=()=>{
+		let filter=document.getElementById('myinput').value;
+		let mytable=document.getElementById('mytable');
+		let tr=mytable.getElementsByTagName('tr');
+		for (var i=0;i<tr.length; i++) {
+			let td=tr[i].getElementsByTagName('td')[0];
+			if (td) {
+				let textvalue=td.textcontent || td.innerHTML;
+				if (textvalue.indexof(filter) >-1) {
+					tr[i].style.display="";
+
+				}
+				else{
+					tr[i].style.display="none";
+				}
+			}
+			
+		}
+	}
+
+</script>
+</body>
+</html>

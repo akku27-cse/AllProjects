@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>	Codomotive test</title>
+	<script src="https://code.jquery.com/git/jquery-2.x-git.min.js"></script>
+</head>
+<body>
+	<form name="" onsubmit="return solution()" method="post">
+		<input type="radio" id="type_person" name="type" value="person" checked/>
+
+    <input type="radio" id="type_company" name="type" value="company"/>
+
+    <input type="text" id="first_name" name="first_name" value="John"/>
+
+    <input type="text" id="last_name" name="last_name" value="Doe"/>
+
+    <input type="text" id="email" name="email" value="john@example.com"/>
+
+    <input type="text" id="company_name" name="company_name" value="codomotive software solution"/>
+
+    <input type="text" id="phone" name="phone" value="234-567-890"/>
+    <input type="submit" name="">
+
+</form>
+	</form>
+	<script>
+		function solution(){
+		try {
+
+        var person =$("type_person").is(":checked");
+
+        var company =$("type_company").is(":checked");
+
+        var fName =$("first_name").val();
+
+        var lName =$("#last_name").val();
+
+        var email =$("#email").val();
+
+        var companyName =$("#company_name").val();
+
+        var phone =$("#phone").val();
+
+        var result = true;
+
+
+
+        if (person) {
+
+            result = result && fName.match("[a-zA-Z ]+");
+
+            result = result && lName.match("[a-zA-Z ]+");
+
+            result = result && email.match("^[a-zAZ.]{1,64}@[a-zA-Z.]{1,64}$");
+
+        } else if (company) {
+
+            result = result && companyName.match("(.)+");
+
+            result = result && phone.match("^[\d]{3}-[\d]{3}-[\d]{4}$");
+
+        } else {
+
+            result = false;
+
+        }
+
+    } catch (ex) {
+
+        // Possible when a DOM Element isn't found
+
+        return false;
+
+    }
+
+
+
+    return result;
+
+}
+
+	</script>
+
+</body>
+</html>
