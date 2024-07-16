@@ -1,0 +1,43 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'poppins',sans-serif;
+
+}
+
+form{
+	background: gray;
+	/*display: flex;*/
+	flex-direction: column;
+	
+	
+}
+form h2{
+	color:black;
+	font-weight: 800;
+	margin-bottom: 20px;
+
+}
+form input, form textarea{
+	border: 0;
+	margin: 10px 0;
+	padding:20px;
+	outline: none;
+	background: white;
+	font-size: 16px;
+
+}
+form button{
+	padding: 15px;
+	background: red;
+	color: white;
+	font-size: 18px;
+	border: 0;
+	outline: none;
+	cursor: pointer;
+	width: 150px;
+	margin:20px auto 0;
+	border-radius: 30px;
+
+}

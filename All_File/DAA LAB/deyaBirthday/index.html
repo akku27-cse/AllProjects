@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        body{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: skyblue;
+        }
+        .app_body{
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            display: flex;
+            background-color: #fedc6f;
+        }
+        .app_body .page_1{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0px 0px 10px black;
+            overflow: hidden;
+            background-color: #fedc6f;
+            position: absolute;
+            z-index: 21;
+        }
+        .app_body .page_1 .box{
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            justify-content: center;
+            transition: 0.4s;
+        }
+        .app_body .page_1 .box .rb_div{
+            width: 100%;
+            height: 60px;
+            background-color: hsl(359deg 63% 37%);
+            border-radius: 0%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            border-top-left-radius: 10%;
+            border-bottom-right-radius: 100%;
+            box-shadow: 0px 0px 20px black;
+        }
+        .app_body .page_1 .box .rb_div img{
+            width: 266px;
+            position: relative;
+            z-index: 9;
+            margin-right: -133px;
+            margin-top: -14px;
+            transform: rotate(10deg);
+        }
+        .app_body .page_1 .box_2 .rb_div{
+            border-radius: 0%;
+            border-bottom-right-radius: 10%;
+            border-top-left-radius: 100%;
+        }
+        .app_body .page_1 .box_2 .name{
+            width: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            padding-top: 190px;
+            margin-left: -100%;
+        }
+        .app_body .page_1 .box_2 .name strong{
+            padding:10px 20px;
+            font-weight: bold;
+            font-size: 20px;
+            color: rgb(75, 63, 63);
+            
+        }
+        .app_body .page_1 .box_2 .open_btn{
+            width: auto;
+            height: auto;
+            padding: 13px 60px;
+            background-color: rgb(205, 189, 106);
+            border-radius:30px;
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            position: absolute;
+            bottom: 20%;
+            font-size: 20px;
+            text-decoration: none;
+            margin-left: -100%;
+            background-color: orangered;
+            transition: 0.2s;
+        }
+        .app_body .page_1 .box_2 .open_btn:hover{
+            background-color:red;
+            cursor: pointer;
+        }
+        
+
+        .page_2{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+            transition: 0.2s;
+
+            background-color: #fedc6f;
+            position: absolute;
+            z-index:20;
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+        .page_2 h1{
+            font-family: 'Rubik Glitch', cursive;
+            font-weight: bold;
+            color: blue;
+            text-shadow: 0px 0px 10px black;
+        }
+        .page_2 img{
+            width: 300px;
+        }
+        .page_2 .prs_image_div{
+            width: 330px;
+            box-shadow: 0px 0px 20px black;
+            height: 30%;
+            margin-top: 30px;
+            overflow: hidden;
+            border-radius: 20px;
+            background-image: url('https://th.bing.com/th/id/R.64c7da2fdf86ec564d6c06efccbbb6b4?rik=hCEr3N9rt3K%2boQ&riu=http%3a%2f%2fwallpaperswide.com%2fdownload%2fcute_girl_2-wallpaper-1280x960.jpg&ehk=8b4riUDpmaYYcUYSwDsBZlTpNN709jFINtUgF%2fwuXEI%3d&risl=&pid=ImgRaw&r=0');
+            background-size: cover;
+            animation: bganim1 20s linear infinite;
+        }
+        @keyframes bganim1{
+            0%{
+                background-image: url('https://th.bing.com/th/id/R.64c7da2fdf86ec564d6c06efccbbb6b4?rik=hCEr3N9rt3K%2boQ&riu=http%3a%2f%2fwallpaperswide.com%2fdownload%2fcute_girl_2-wallpaper-1280x960.jpg&ehk=8b4riUDpmaYYcUYSwDsBZlTpNN709jFINtUgF%2fwuXEI%3d&risl=&pid=ImgRaw&r=0');
+            }
+            50%{
+                background-image: url('https://th.bing.com/th/id/OIP.JDPixwJ6Rug7KAUF_LpHwQHaHJ?pid=ImgDet&w=736&h=710&rs=1');
+            }
+            100%{
+                background-image: url('https://th.bing.com/th/id/R.64c7da2fdf86ec564d6c06efccbbb6b4?rik=hCEr3N9rt3K%2boQ&riu=http%3a%2f%2fwallpaperswide.com%2fdownload%2fcute_girl_2-wallpaper-1280x960.jpg&ehk=8b4riUDpmaYYcUYSwDsBZlTpNN709jFINtUgF%2fwuXEI%3d&risl=&pid=ImgRaw&r=0');
+            }
+        }
+        .page_2 .next_btn1{
+            padding: 10px 20px ;
+            border-radius: 30px;
+            background-color: rgba(0, 0, 0, 0.179);
+            font-weight: bold;
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            transition: 0.2s;
+            cursor: pointer;
+        }
+        .page_2 .next_btn1:hover{
+            box-shadow: 0px 0px 10px black;
+        }
+        .page_3 .next_btn2{
+            padding: 10px 20px ;
+            border-radius: 30px;
+            background-color: rgba(0, 0, 0, 0.179);
+            font-weight: bold;
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            transition: 0.2s;
+            cursor: pointer;
+        }
+        .page_3 .next_btn2:hover{
+            box-shadow: 0px 0px 10px black;
+        }
+        .page_3{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: 2s;
+            background-color: #fedc6f;
+            position: absolute;
+            z-index: 10;
+        }
+        .page_3 h1{
+            width: 90%;
+            text-align: center;
+            font-family: 'Rubik Glitch', cursive;
+        }
+        .page_4{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: 2s;
+            background-color: #fedc6f;
+        }
+        .page_4 h1{
+            width: 90%;
+            text-align: center;
+            font-family: 'Rubik Glitch', cursive;
+        }
+        .page_4 .next_btn3{
+            padding: 10px 20px ;
+            border-radius: 30px;
+            background-color: rgba(0, 0, 0, 0.179);
+            font-weight: bold;
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            transition: 0.2s;
+            cursor: pointer;
+        }
+        .page_4 .next_btn3:hover{
+            box-shadow: 0px 0px 10px black;
+        }
+
+        .page_5{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: 2s;
+            position: absolute;
+            z-index: 9;
+            background-color: #fedc6f;
+            
+        }
+        .page_5 h1{
+            width: 90%;
+            text-align: center;
+            font-family: 'Rubik Glitch', cursive;
+        }
+        .page_5 .next_btn4{
+            padding: 10px 20px ;
+            border-radius: 30px;
+            background-color: rgba(0, 0, 0, 0.179);
+            font-weight: bold;
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            transition: 0.2s;
+            cursor: pointer;
+        }
+        .page_5 .next_btn4:hover{
+            box-shadow: 0px 0px 10px black;
+        }
+        .page_6{
+            display: flex;
+            z-index: 8;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="app_body">
+        <div class="page_1" id="page_1">
+            <div class="box box_1" id="box_1">
+                <div class="rb_div">
+                    <img src="https://lh6.googleusercontent.com/proxy/MAIeCizGYPMzTePdjCkDexfQHFboq2MNspb7vfUOM5Xta1-MKU40MqUEgiOC6NuyvCGZIHNtlneQzg7muEMdJzqN_A=w1200-h630-p-k-no-nu" alt="">
+                </div>
+            </div>
+            <div class="box box_2" id="box_2">
+                <div class="rb_div">
+
+                </div>
+                <div class="name">
+                    <strong>
+                        Rabbit TO Rat
+                    </strong>
+                </div>
+                <a href="#" class="open_btn" id="open_btn">
+                    Open
+                </a>
+            </div>
+        </div>
+        <div class="page_2" id="page_2">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEindyb9u1L364xPs4zVSW14Q2_d3SRMpxYh7v9eOY31jLSPgDAwpoM8HXNkJxqqiUXRfUB_zxgEdrkhy1uqTTW7Tq14_AZ6mbLXzgZXgaIN1emKrNXq32MX0OXsBKmMRBNUkTFyExfIk_RIlGz739QKjN1a52MvKd8uvPS94EjBooK_yHPaPPUiui3-/w945-h600-p-k-no-nu/Cake.png" alt="">
+            <h1>Happy Birthday Rat <!--name--></h1>
+            <div class="prs_image_div">
+                
+            </div>
+            <a href="#" class="next_btn1" id="next_btn1">
+                Next =>
+            </a>
+        </div>
+        <div class="page_3" id="page_3">
+            <h1>
+                kaamayaabee badee nahee, use paane vaale bade hote hain....
+                 jakhm bade nahin, use bharane vaale bade hote hain aur rishte bade nahee, use nibhaane vaale bade hote hain !!
+            </h1>
+            <a href="#" class="next_btn2" id="next_btn2">
+                Next =>
+            </a>
+        </div>
+        <div class="page_4" id="page_4">
+            <h1>
+                #lifai ka har #goal rahe aapaka #chlaiar, tum #suchchaiss pao without any #faiar har pal jiyo without any #taiar, ainjoy your day my #daiar,
+            </h1>
+            <a href="#" class="next_btn3" id="next_btn3">
+                Next =>
+            </a>
+        </div>
+        <div class="page_5" id="page_5">
+            <h1>
+                us din khuda ne bhee jashn manaaya hoga, jis din aapako apane haathon se banaaya hoga, usane bhee bahaaye honge aansoo... jis din aapako dharatee par bhej kar, khud ko akela paaya hoga...
+            </h1>
+            <a href="#" class="next_btn4" id="next_btn4">
+                Next =>
+            </a>
+        </div>
+        <div class="page_2 page_6" id="page_6">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEindyb9u1L364xPs4zVSW14Q2_d3SRMpxYh7v9eOY31jLSPgDAwpoM8HXNkJxqqiUXRfUB_zxgEdrkhy1uqTTW7Tq14_AZ6mbLXzgZXgaIN1emKrNXq32MX0OXsBKmMRBNUkTFyExfIk_RIlGz739QKjN1a52MvKd8uvPS94EjBooK_yHPaPPUiui3-/w945-h600-p-k-no-nu/Cake.png" alt="">
+            <h1>Happy Birthday Rat <!--name--></h1>
+            <div class="prs_image_div">
+                
+            </div>
+            
+        </div>
+    </div>
+    <script>
+        document.getElementById('open_btn').addEventListener('click',function(){
+            document.getElementById('box_1').style.transform='translateX(-300%)';
+            document.getElementById('box_2').style.transform='translateX(300%)';
+            document.getElementById('page_1').style.transform='translateY(-300%)';
+        });
+        document.getElementById('next_btn1').addEventListener('click',function(){
+            document.getElementById('page_2').style.transform='translateX(-300%)';
+        });
+        document.getElementById('next_btn2').addEventListener('click',function(){
+            document.getElementById('page_3').style.transform='translateX(-300%)';
+        });
+        document.getElementById('next_btn3').addEventListener('click',function(){
+            document.getElementById('page_4').style.transform='translateX(-300%)';
+        });
+        document.getElementById('next_btn4').addEventListener('click',function(){
+            document.getElementById('page_5').style.transform='translateX(-300%)';
+        });
+    </script>
+</body>
+</html>

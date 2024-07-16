@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=300, initial-scale=1" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>HTML Form to Mail</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<section>
+  <div class="container">
+    <form action="https://formspree.io/f/mdobjrap" method="POST" id="my-form">
+      <h2>Send A Birthday Message For Deya</h2>
+
+      <div class="form-group">
+        <label for="Name">Enter Your Name(Must required)</label>
+        <input type="text" id="Name" name="Name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" >
+      </div>
+
+      <div class="form-group">
+        <label for="massage">Send BirthDay Message For Deya</label>
+        <textarea name="massage" id="massage" cols="30" rows="10"></textarea>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  <div id="status"></div>
+</section>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

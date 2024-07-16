@@ -1,0 +1,95 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	background-color:#000066;
+}
+.balloon{
+	height: 60px;
+	width: 55px;
+	background-color: crimson;
+	position: absolute;
+	top: 40%;
+	left: 10%;
+	border-radius: 50%;
+    animation: move 2s ease-in infinite;
+}
+.balloon:before{
+	content: "";
+	height: 60px;
+	width: 6px;
+	position: absolute;
+	background-color: white;
+	top: 93%;
+left: 40%;
+
+}
+@keyframes move{
+	0%{
+		top: 100%;
+	}
+	100%{
+		top: 0%;
+	}
+}
+.balloon:nth-child(2){
+	left: 20%;
+	top: 40%;
+	background-color: yellow;
+	animation-duration: 3s;
+}
+.balloon:nth-child(3){
+	left: 30%;
+	top: 40%;
+	background-color: lightpink;
+	animation-duration: 4s;
+}
+
+.balloon:nth-child(4){
+	left: 40%;
+	top: 40%;
+	background-color: crimson;
+	animation-duration: 5s;
+}
+
+.balloon:nth-child(5){
+	left: 50%;
+	top: 40%;
+	background-color: gray;
+	animation-duration: 6s;
+}
+
+.balloon:nth-child(6){
+	left: 60%;
+	top: 40%;
+	background-color: orange;
+	animation-duration: 2s;
+}
+.balloon:nth-child(7){
+	left: 70%;
+	top: 40%;
+	background-color: yellow;
+	animation-duration: 7s;
+}
+
+.balloon:nth-child(8){
+	left: 80%;
+	top: 40%;
+	background-color: blue;
+	animation-duration: 3s;
+}
+.balloon:nth-child(9){
+	left: 90%;
+	top: 40%;
+	background-color: crimson;
+	animation-duration: 4s;
+}
+h2{
+	font-size: 30px;
+	color: white;
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	font-family: cursive;
+	transform: translate(-30%,-50%);}

@@ -1,0 +1,646 @@
+#include<stdio.h>
+
+
+#include<stdlib.h>
+ 
+#define infinity 9999
+#define MAX 20
+ 
+int G[MAX][MAX],spanning[MAX][MAX],n;
+ 
+int prims();
+ 
+int main()
+{
+int i,j,total_cost;
+printf("Enter no. of vertices:");
+scanf("%d",&n);
+printf("\nEnter the adjacency matrix:\n");
+for(i=0;i<n;i++)
+for(j=0;j<n;j++)
+scanf("%d",&G[i][j]);
+total_cost=prims();
+printf("\nspanning tree matrix:\n");
+for(i=0;i<n;i++)
+{
+printf("\n");
+for(j=0;j<n;j++)
+printf("%d\t",spanning[i][j]);
+}
+printf("\n\nTotal cost of spanning tree=%d",total_cost);
+return 0;
+}
+ 
+int prims()
+{
+int cost[MAX][MAX];
+int u,v,min_distance,distance[MAX],from[MAX];
+int visited[MAX],no_of_edges,i,min_cost,j;
+//create cost[][] matrix,spanning[][]
+for(i=0;i<n;i++)
+for(j=0;j<n;j++)
+{
+if(G[i][j]==0)
+cost[i][j]=infinity;
+else
+cost[i][j]=G[i][j];
+spanning[i][j]=0;
+}
+//initialise visited[],distance[] and from[]
+distance[0]=0;
+visited[0]=1;
+for(i=1;i<n;i++)
+{
+distance[i]=cost[0][i];
+from[i]=0;
+visited[i]=0;
+}
+min_cost=0; //cost of spanning tree
+no_of_edges=n-1; //no. of edges to be added
+while(no_of_edges>0)
+{
+//find the vertex at minimum distance from the tree
+min_distance=infinity;
+for(i=1;i<n;i++)
+if(visited[i]==0&&distance[i]<min_distance)
+{
+v=i;
+min_distance=distance[i];
+}
+u=from[v];
+//insert the edge in spanning tree
+spanning[u][v]=distance[v];
+spanning[v][u]=distance[v];
+no_of_edges--;
+visited[v]=1;
+//updated the distance[] array
+for(i=1;i<n;i++)
+if(visited[i]==0&&cost[i][v]<distance[i])
+{
+distance[i]=cost[i][v];
+from[i]=v;
+}
+min_cost=min_cost+cost[u][v];
+}
+return(min_cost);
+}
+job...........
+
+#include <stdio.h>
+
+#define MAX 100
+
+typedef struct Job {
+  char id[5];
+  int deadline;
+  int profit;
+} Job;
+
+void jobSequencingWithDeadline(Job jobs[], int n);
+
+int minValue(int x, int y) {
+  if(x < y) return x;
+  return y;
+}
+
+int main(void) {
+  //variables
+  int i, j;
+
+  //jobs with deadline and profit
+  Job jobs[5] = {
+    {"j1", 2,  60},
+    {"j2", 1, 100},
+    {"j3", 3,  20},
+    {"j4", 2,  40},
+    {"j5", 4,  20},
+  };
+
+  //temp
+  Job temp;
+
+  //number of jobs
+  int n = 5;
+
+  //sort the jobs profit wise in descending order
+  for(i = 1; i < n; i++) {
+    for(j = 0; j < n - i; j++) {
+      if(jobs[j+1].profit > jobs[j].profit) {
+        temp = jobs[j+1];
+        jobs[j+1] = jobs[j];
+        jobs[j] = temp;
+      }
+    }
+  }
+
+  printf("%10s %10s %10s\n", "Job", "Deadline", "Profit");
+  for(i = 0; i < n; i++) {
+    printf("%10s %10i %10i\n", jobs[i].id, jobs[i].deadline, jobs[i].profit);
+  }
+
+  jobSequencingWithDeadline(jobs, n);
+
+  return 0;
+}
+
+void jobSequencingWithDeadline(Job jobs[], int n) {
+  //variables
+  int i, j, k, maxprofit;
+
+  //free time slots
+  int timeslot[MAX];
+
+  //filled time slots
+  int filledTimeSlot = 0;
+
+  //find max deadline value
+  int dmax = 0;
+  for(i = 0; i < n; i++) {
+    if(jobs[i].deadline > dmax) {
+      dmax = jobs[i].deadline;
+    }
+  }
+
+  //free time slots initially set to -1 [-1 denotes EMPTY]
+  for(i = 1; i <= dmax; i++) {
+    timeslot[i] = -1;
+  }
+
+  printf("dmax: %d\n", dmax);
+
+  for(i = 1; i <= n; i++) {
+    k = minValue(dmax, jobs[i - 1].deadline);
+    while(k >= 1) {
+      if(timeslot[k] == -1) {
+        timeslot[k] = i-1;
+        filledTimeSlot++;
+        break;
+      }
+      k--;
+    }
+
+    //if all time slots are filled then stop
+    if(filledTimeSlot == dmax) {
+      break;
+    }
+  }
+
+  //required jobs
+  printf("\nRequired Jobs: ");
+  for(i = 1; i <= dmax; i++) {
+    printf("%s", jobs[timeslot[i]].id);
+
+    if(i < dmax) {
+      printf(" --> ");
+    }
+  }
+
+  //required profit
+  maxprofit = 0;
+  for(i = 1; i <= dmax; i++) {
+    maxprofit += jobs[timeslot[i]].profit;
+  }
+  printf("\nMax Profit: %d\n", maxprofit);
+} 
+
+krus............
+#include<stdio.h>
+ 
+#define MAX 30
+ 
+typedef struct edge
+{
+int u,v,w;
+}edge;
+ 
+typedef struct edgelist
+{
+edge data[MAX];
+int n;
+}edgelist;
+ 
+edgelist elist;
+ 
+int G[MAX][MAX],n;
+edgelist spanlist;
+ 
+void kruskal();
+int find(int belongs[],int vertexno);
+void union1(int belongs[],int c1,int c2);
+void sort();
+void print();
+ 
+void main()
+{
+int i,j,total_cost;
+printf("\nEnter number of vertices:");
+scanf("%d",&n);
+printf("\nEnter the adjacency matrix:\n");
+for(i=0;i<n;i++)
+for(j=0;j<n;j++)
+scanf("%d",&G[i][j]);
+kruskal();
+print();
+}
+ 
+void kruskal()
+{
+int belongs[MAX],i,j,cno1,cno2;
+elist.n=0;
+ 
+for(i=1;i<n;i++)
+for(j=0;j<i;j++)
+{
+if(G[i][j]!=0)
+{
+elist.data[elist.n].u=i;
+elist.data[elist.n].v=j;
+elist.data[elist.n].w=G[i][j];
+elist.n++;
+}
+}
+ 
+sort();
+for(i=0;i<n;i++)
+belongs[i]=i;
+spanlist.n=0;
+for(i=0;i<elist.n;i++)
+{
+cno1=find(belongs,elist.data[i].u);
+cno2=find(belongs,elist.data[i].v);
+if(cno1!=cno2)
+{
+spanlist.data[spanlist.n]=elist.data[i];
+spanlist.n=spanlist.n+1;
+union1(belongs,cno1,cno2);
+}
+}
+}
+ 
+int find(int belongs[],int vertexno)
+{
+return(belongs[vertexno]);
+}
+ 
+void union1(int belongs[],int c1,int c2)
+{
+int i;
+for(i=0;i<n;i++)
+if(belongs[i]==c2)
+belongs[i]=c1;
+}
+ 
+void sort()
+{
+int i,j;
+edge temp;
+for(i=1;i<elist.n;i++)
+for(j=0;j<elist.n-1;j++)
+if(elist.data[j].w>elist.data[j+1].w)
+{
+temp=elist.data[j];
+elist.data[j]=elist.data[j+1];
+elist.data[j+1]=temp;
+}
+}
+ 
+void print()
+{
+int i,cost=0;
+for(i=0;i<spanlist.n;i++)
+{
+printf("\n%d\t%d\t%d",spanlist.data[i].u,spanlist.data[i].v,spanlist.data[i].w);
+cost=cost+spanlist.data[i].w;
+}
+ 
+printf("\n\nCost of the spanning tree=%d",cost);
+}
+
+knasp.............
+#include<stdio.h>
+
+void main ()
+{
+  int n, m, w[100], p[100], ratio[100] , i, j, u, temp;
+  float xr, x[100], total_profit=0, total_weight=0;
+
+  //Reading number of items
+  printf ("Enter the number of items(n): ");
+  scanf ("%d", &n);
+
+  //Reading the capacity of the knapsack 
+  printf ("Enter the capacity of the Knapsack(m): ");
+  scanf ("%d", &m);
+
+  //Initializing remaining capacity of Knapsack (u)
+  u = m;
+  
+  //Initializing Solution Array x[]
+  for(i=0;i<n;i++)
+  {
+      x[i]=0;
+  }
+
+  //Reading the Weights
+  printf ("Enter the Weights of items: ");
+  for (i = 0; i < n; i++)
+    {
+      printf ("\n\tWeight of item %d = ", i + 1);
+      scanf ("%d", &w[i]);
+    }
+
+  //Reading the Profit values
+  printf ("\nEnter the Profit Values of items: ");
+  for (i = 0; i < n; i++)
+    {
+      printf ("\n\tProfit of item %d = ", i + 1);
+      scanf ("%d", &p[i]);
+    }
+
+  //Calculating Pi/Wi ratio of each item and storing in array ratio[]
+  for (i = 0; i < n; i++)
+    {
+      ratio[i] = p[i] / w[i];
+    }
+
+  //Sorting all the arrays based on the ratio in descending order
+  for (i = 0; i < n; i++)
+    {
+      for (j = 0; j < n - 1; j++)
+	{
+	  if (ratio[j] < ratio[i])
+	    {
+	      temp = ratio[i];
+	      ratio[i] = ratio[j];
+	      ratio[j] = temp;
+	      
+	      temp = w[i];
+	      w[i] = w[j];
+	      w[j] = temp;
+	      
+	      temp = p[i];
+	      p[i] = p[j];
+	      p[j] = temp;
+	    }
+	}
+    }
+    
+    //PRINTING THE SORTED TABLE 
+    printf("\n The Table After Sorting based on the Ratio: \n");
+    
+    //Printing Item numbers 
+    printf("\nItem:\t\t");
+    for(i=0;i<n;i++)
+    {
+        printf("%d\t",i+1);
+    }
+    
+    //Printing Profit Array 
+    printf("\nProfit:\t\t");
+    for(i=0;i<n;i++)
+    {
+        printf("%d\t",p[i]);
+    }
+    
+    //Printing Weight Array 
+    printf("\nWeights:\t");
+    for(i=0;i<n;i++)
+    {
+        printf("%d\t",w[i]);
+    }
+
+
+    //Printing RATIO Array 
+    printf ("\nRATIO:\t\t"); 
+    for (i = 0; i < n; i++)
+    {
+      printf ("%d\t", ratio[i]);
+    }
+    
+    //Calculating Solution Array x
+    for(i=0;i<n;i++)
+    {
+        if(w[i]<=u)
+        {
+            x[i]=1;     //Setting solution index as 1 
+            u=u-w[i];   //updating remaining knapsack capacity 
+        }
+        else if(w[i]>u)
+        {
+            break;
+        }
+    }
+    
+    if(i<=n)
+    {
+        xr = (float)u/w[i];    //Calculating what fraction of that item will fit into the knapsack
+        x[i] = xr;      //Setting this fraction to solution array 
+    }
+    
+    //Printing Solution Array x 
+    printf("\n X = [");
+    for(i=0;i<n;i++)
+    {
+        printf("%.3f , ",x[i]);
+    }
+    printf("]");
+    
+    //Calculating Total Profit & Total Weight 
+    for(i=0;i<n;i++)
+    {
+        total_profit += x[i]*p[i];
+        total_weight += x[i]*w[i];
+    }
+    
+    //Displaying Total Profit and Total Weight 
+    printf("\nTotal Profit = %.2f \n Total Weight = %.2f ",total_profit,total_weight);
+
+
+}
+binary.............
+#include <stdio.h>  
+int binarySearch(int a[], int beg, int end, int val)    
+{    
+    int mid;    
+    if(end >= beg)     
+    {        mid = (beg + end)/2;    
+/* if the item to be searched is present at middle */  
+        if(a[mid] == val)    
+        {                 
+            return mid+1;    
+        }    
+            /* if the item to be searched is smaller than middle, then it can only be in left subarray */  
+        else if(a[mid] < val)     
+        {  
+            return binarySearch(a, mid+1, end, val);    
+        }    
+            /* if the item to be searched is greater than middle, then it can only be in right subarray */  
+        else     
+        {  
+            return binarySearch(a, beg, mid-1, val);    
+        }          
+    }    
+    return -1;     
+}   
+int main() {
+int i;  
+  int a[] = {11, 14, 25, 30, 40, 41, 52, 57, 70}; // given array  
+  int val = 40; // value to be searched  
+  int n = sizeof(a) / sizeof(a[0]); // size of array  
+  int res = binarySearch(a, 0, n-1, val); // Store result  
+  printf("The elements of the array are - ");  
+  for (i = 0; i < n; i++)  
+  printf("%d ", a[i]);   
+  printf("\nElement to be searched is - %d", val);  
+  if (res == -1)  
+  printf("\nElement is not present in the array");  
+  else  
+  printf("\nElement is present at %d position of array", res);  
+  return 0;  
+}
+
+quick..........
+#include<stdio.h>
+void quicksort(int number[25],int first,int last){
+   int i, j, pivot, temp;
+   if(first<last){
+      pivot=first;
+      i=first;
+      j=last;
+      while(i<j){
+         while(number[i]<=number[pivot]&&i<last)
+         i++;
+         while(number[j]>number[pivot])
+         j--;
+         if(i<j){
+            temp=number[i];
+            number[i]=number[j];
+            number[j]=temp;
+         }
+      }
+      temp=number[pivot];
+      number[pivot]=number[j];
+      number[j]=temp;
+      quicksort(number,first,j-1);
+      quicksort(number,j+1,last);
+   }
+}
+int main(){
+   int i, count, number[25];
+   printf("How many elements are u going to enter?: ");
+   scanf("%d",&count);
+   printf("Enter %d elements: ", count);
+   for(i=0;i<count;i++)
+   scanf("%d",&number[i]);
+   quicksort(number,0,count-1);
+   printf("Order of Sorted elements: ");
+   for(i=0;i<count;i++)
+   printf(" %d",number[i]);
+   return 0;
+}
+merge.......
+#include <stdio.h>
+
+#define max 10
+
+int a[11] = { 10, 14, 19, 26, 27, 31, 33, 35, 42, 44, 0 };
+int b[10];
+
+void merging(int low, int mid, int high) {
+   int l1, l2, i;
+
+   for(l1 = low, l2 = mid + 1, i = low; l1 <= mid && l2 <= high; i++) {
+      if(a[l1] <= a[l2])
+         b[i] = a[l1++];
+      else
+         b[i] = a[l2++];
+   }
+   
+   while(l1 <= mid)    
+      b[i++] = a[l1++];
+
+   while(l2 <= high)   
+      b[i++] = a[l2++];
+
+   for(i = low; i <= high; i++)
+      a[i] = b[i];
+}
+
+void sort(int low, int high) {
+   int mid;
+   
+   if(low < high) {
+      mid = (low + high) / 2;
+      sort(low, mid);
+      sort(mid+1, high);
+      merging(low, mid, high);
+   } else { 
+      return;
+   }   
+}
+
+int main() { 
+   int i;
+
+   printf("List before sorting\n");
+   
+   for(i = 0; i <= max; i++)
+      printf("%d ", a[i]);
+
+   sort(0, max);
+
+   printf("\nList after sorting\n");
+   
+   for(i = 0; i <= max; i++)
+      printf("%d ", a[i]);
+}
+maxmin........
+#include <stdio.h>
+
+#define MAX_SIZE 100   // Maximum array size
+
+int main()
+{
+    int arr[MAX_SIZE];
+    int i, max, min, size;
+
+    /* Input size of the array */
+    printf("Enter size of the array: ");
+    scanf("%d", &size);
+
+    /* Input array elements */
+    printf("Enter elements in the array: ");
+    for(i=0; i<size; i++)
+    {
+        scanf("%d", &arr[i]);
+    }
+
+
+    /* Assume first element as maximum and minimum */
+    max = arr[0];
+    min = arr[0];
+
+    /*
+     * Find maximum and minimum in all array elements.
+     */
+    for(i=1; i<size; i++)
+    {
+        /* If current element is greater than max */
+        if(arr[i] > max)
+        {
+            max = arr[i];
+        }
+
+        /* If current element is smaller than min */
+        if(arr[i] < min)
+        {
+            min = arr[i];
+        }
+    }
+
+    /* Print maximum and minimum element */
+    printf("Maximum element = %d\n", max);
+    printf("Minimum element = %d", min);
+
+    return 0;
+}
