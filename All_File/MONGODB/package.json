@@ -1,0 +1,16 @@
+{
+  "name": "mongodb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Santu Jana",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
