@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Match-match game</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+<section class="greeting wrapper">
+    <div class="">
+        <h1>Play Memory Game</h1>
+        <button class="play button button-big">play</button>
+        <a href="https://santuprotfolio.web.app/"><button class="play button button-big">Profile</button></a>
+    </div>
+</section>
+<section class="players-profile wrapper">
+    <h2>rules of the game</h2>
+    <ul class="rules">
+        <li>Click on a card.</li>
+        <li> Keep revealing cards and working your memory to remember each unveiled card.</li>
+        <li>Match cards properly with less moves and in faster time.</li>
+    </ul>
+    <h3>fill your profile</h3>
+    <form id="registrationForm" action="#" method="post">
+        <div>
+            <label for="name">First Name:*</label>
+            <input id="name" type="text" size="40" name="name" placeholder="Enter Your Name" required>
+        </div>
+        <div>
+            <label for="surname">Last Name:*</label>
+            <input id="surname" type="text" size="40" name="surname" placeholder="Enter Your Last Name" required>
+        </div>
+        <div>
+            <label for="email">Email:*</label>
+            <input  id="email" type="email" size="40" name="email" placeholder="Enter Your Email" required>
+        </div>
+        <div class="shirt-img">
+            <p>Choose a shirt:</p>
+            <input type="radio" name="shirt" value="shirt-color-1"/>
+            <img src="images/shirt_1.png">
+            <input type="radio" name="shirt" value="shirt-color-2" checked/>
+            <img src="images/shirt_2.png">
+            <input type="radio" name="shirt" value="shirt-color-3"/>
+            <img src="images/shirt_3.png">
+        </div>
+        <div class="difficulty">
+            <p>Choose difficulty:</p>
+            <input id="easy" type="radio" name="difficulty" value="12"/>
+            <label for="easy">easy</label>
+            <input id="medium" type="radio" name="difficulty" value="20" checked/>
+            <label for="medium">medium</label>
+
+        </div>
+        <div class="button-panel">
+            <button class="button button-small" type="submit" value="START">START</button>
+            <button class="button button-small" type="reset" value="RESET">RESET</button>
+        </div>
+    </form>
+</section>
+<section class="game-field wrapper">
+    <div class="timer"></div>
+    <div id="gameField">
+        <ul class="cards"></ul>
+    </div>
+    <div class="button-panel">
+        <button class="button backward-button button-small">&lt;</button>
+        <button class="button restart-button button-small">restart</button>
+    </div>
+</section>
+<section class="congratulation wrapper">
+    <h1>congratulation!</h1>
+    <h2>this game is yours</h2>
+    <button class="button button-small new-game">new game</button>
+    <div class="results">
+        <h3>top results</h3>
+        <ul class="top-list"></ul>
+    </div>
+</section>
+<script src="js/app.js"></script>
+</body>
+</html>
