@@ -1,29 +1,29 @@
-
 /**
  * LinearSearch
  */
 public class LinearSearch {
 
-    public static boolean Search(int[] arr) {
-        int target = 9;
-        int n = arr.length;
-
+    public static boolean lSearch(int arr[], int target) {
+        boolean bool = false;
         for (int i = 0; i < arr.length; i++) {
-            if (target == arr[i]) {
-                return false;
+            if (arr[i] == target) {
+                bool = true;
             }
         }
 
-        return true;
+        return bool;
     }
 
-    public static void main(String[] a) {
-        int arr[] = { 1, 2, 3 };
-        boolean bol = Search(arr);
-        if (bol) {
-            System.out.println("Found");
+    public static void main(String[] args) {
+
+        int arr[] = { 5, 9, 3, 6, 7, 1 };
+        int target = 61;
+        boolean result = lSearch(arr, target);
+        if (result == true) {
+            System.out.println("found");
         } else {
             System.out.println("Not Found");
-        }  
+        }
     }
+
 }
